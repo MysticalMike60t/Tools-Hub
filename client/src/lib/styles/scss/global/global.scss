@@ -1,3 +1,19 @@
+@import "./vars";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -5,9 +21,44 @@
 }
 
 .container {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  left: 0;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
   flex: 1;
   background-color: #f4f4f4;
   padding: 20px;
+}
+
+.header {
+  width: 100vw;
+  height: 50px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background: $background;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  ul {
+    li {
+      a {
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+      }
+    }
+  }
+  button {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+  }
 }
 
 @import "../pages/home.scss";
