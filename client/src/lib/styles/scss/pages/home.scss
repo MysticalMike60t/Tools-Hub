@@ -1,0 +1,63 @@
+.page {
+    text-align: center;
+    padding: 20px;
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .tool-categories {
+      margin-top: 30px;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: 10px 0;
+          a {
+            text-decoration: none;
+            color: #0074d9;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  
+    .featured-tools {
+      margin-top: 30px;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      .tool {
+        display: inline-block;
+        margin: 10px;
+  
+        img {
+          max-width: 100px;
+          border: 1px solid #ccc;
+        }
+  
+        h3 {
+          font-size: 1.2rem;
+          margin-top: 10px;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  
