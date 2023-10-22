@@ -1,6 +1,17 @@
 const { app, BrowserWindow, Menu, MenuItem } = require("electron");
 const path = require("path");
 
+app.setUserTasks([
+  {
+    program: process.execPath,
+    arguments: '--new-window',
+    iconPath: process.execPath,
+    iconIndex: 0,
+    title: 'New Window',
+    description: 'Create a new window'
+  }
+])
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     titleBarStyle: "hidden",
