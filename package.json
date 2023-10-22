@@ -2,7 +2,7 @@
   "name": "tools-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,23 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^27.0.2"
+  },
+  "build": {
+    "appId": "cadenmf.com",
+    "productName": "Tools Hub",
+    "copyright": "Copyright © 2023 Caden Finkelstein",
+    "win": {
+      "icon": "./lib/images/icons/note.ico"
+    },
+    "files": [
+      "./client/build/**/*",
+      "./client/dist/**/*",
+      "./client/node_modules/**/*",
+      "./client/public/**/*",
+      "*.js"
+    ],
+    "directories": {
+      "buildResources": "public"
+    }
   }
 }
