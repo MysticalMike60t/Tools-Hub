@@ -1,19 +1,20 @@
 const { app, BrowserWindow, Menu, MenuItem } = require("electron");
 const path = require("path");
 
-app.setUserTasks([
-  {
-    program: process.execPath,
-    arguments: '--new-window',
-    iconPath: process.execPath,
-    iconIndex: 0,
-    title: 'New Window',
-    description: 'Create a new window'
-  }
-])
+// app.setUserTasks([
+//   {
+//     program: process.execPath,
+//     arguments: '--new-window',
+//     iconPath: process.execPath,
+//     iconIndex: 0,
+//     title: 'New Window',
+//     description: 'Create a new window'
+//   }
+// ])
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
+    icon: "./lib/images/icons/note.ico",
     titleBarStyle: "hidden",
     titleBarOverlay: {
       color: "#2f3241",
@@ -25,6 +26,7 @@ function createWindow() {
       nodeIntegration: false,
       contextIsolation: true,
       sandbox: true,
+      preload: path.join(__dirname, 'preload.js')
     },
   });
 
