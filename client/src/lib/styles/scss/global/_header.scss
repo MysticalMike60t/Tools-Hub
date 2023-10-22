@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100vw;
+  height: 50px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background: $background;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 0 0 30px;
+    margin: 0;
+    flex-direction: row;
+    list-style: none;
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  button {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+  }
+}

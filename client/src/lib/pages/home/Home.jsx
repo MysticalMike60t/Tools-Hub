@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -9,9 +10,15 @@ function Home() {
       <div className="tool-categories">
         <h2>Tool Categories</h2>
         <ul>
-          <li><a href="/category1">Category 1</a></li>
-          <li><a href="/category2">Category 2</a></li>
-          <li><a href="/category3">Category 3</a></li>
+          <li>
+            <Link to="/category1">Category 1</Link>
+          </li>
+          <li>
+            <Link to="/category2">Category 2</Link>
+          </li>
+          <li>
+            <Link to="/category3">Category 3</Link>
+          </li>
         </ul>
       </div>
 
