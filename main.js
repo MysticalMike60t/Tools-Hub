@@ -30,8 +30,6 @@ function createWindow() {
     },
   });
 
-  mainWindow.setIcon(path.join("./lib/images/icons/note.ico"));
-
   // Set a permissive Content Security Policy (CSP) that allows everything
   mainWindow.webContents.session.webRequest.onHeadersReceived(
     ({ responseHeaders }, callback) => {
