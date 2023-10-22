@@ -17,7 +17,7 @@
     "productName": "Tools Hub",
     "copyright": "Copyright © 2023 Caden Finkelstein",
     "win": {
-      "icon": "./lib/images/icons/note.ico"
+      "icon": "./lib/images/icons/toolbox.png"
     },
     "files": [
       "./client/build/**/*",
@@ -27,6 +27,7 @@
       "*.js"
     ],
     "directories": {
+      "output": "dist",
       "buildResources": "public"
     }
   }

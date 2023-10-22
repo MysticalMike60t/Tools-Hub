@@ -14,7 +14,7 @@ const path = require("path");
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    icon: "./lib/images/icons/note.ico",
+    icon: "./lib/images/icons/toolbox.png",
     titleBarStyle: "hidden",
     titleBarOverlay: {
       color: "#2f3241",
