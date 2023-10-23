@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Password = () => {
   const [passwordLength, setPasswordLength] = useState(12);
@@ -8,9 +8,9 @@ const Password = () => {
   const [generatedPasswords, setGeneratedPasswords] = useState([]);
 
   const generatePassword = () => {
-    const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
-    const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const specialChars = '!@#$%^&*()_-+=<>?';
+    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+    const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const specialChars = "!@#$%^&*()_-+=<>?";
     let validChars = lowercaseChars;
 
     if (includeUppercase) {
@@ -22,7 +22,7 @@ const Password = () => {
 
     let passwords = [];
     for (let i = 0; i < numPasswords; i++) {
-      let password = '';
+      let password = "";
       for (let j = 0; j < passwordLength; j++) {
         const randomIndex = Math.floor(Math.random() * validChars.length);
         password += validChars[randomIndex];
@@ -33,46 +33,56 @@ const Password = () => {
   };
 
   return (
-    <div className='page one'>
+    <div className="page one password">
       <h2>Password Generator</h2>
-      <div>
-        <label>Password Length: </label>
-        <input
-          type="number"
-          value={passwordLength}
-          onChange={(e) => setPasswordLength(e.target.value)}
-        />
+      <div className="input">
+        <label>
+          Password Length:{" "}
+          <input
+            type="number"
+            value={passwordLength}
+            onChange={(e) => setPasswordLength(e.target.value)}
+          />
+        </label>
       </div>
-      <div>
-        <label>Include Uppercase: </label>
-        <input
-          type="checkbox"
-          checked={includeUppercase}
-          onChange={() => setIncludeUppercase(!includeUppercase)}
-        />
+      <div className="input">
+        <label>
+          Include Uppercase:{" "}
+          <input
+            type="checkbox"
+            checked={includeUppercase}
+            onChange={() => setIncludeUppercase(!includeUppercase)}
+          />
+        </label>
       </div>
-      <div>
-        <label>Include Special Characters: </label>
-        <input
-          type="checkbox"
-          checked={includeSpecialChars}
-          onChange={() => setIncludeSpecialChars(!includeSpecialChars)}
-        />
+      <div className="input">
+        <label>
+          Include Special Characters:{" "}
+          <input
+            type="checkbox"
+            checked={includeSpecialChars}
+            onChange={() => setIncludeSpecialChars(!includeSpecialChars)}
+          />
+        </label>
       </div>
-      <div>
-        <label>Number of Passwords: </label>
-        <input
-          type="number"
-          value={numPasswords}
-          onChange={(e) => setNumPasswords(e.target.value)}
-        />
+      <div className="input">
+        <label>
+          Number of Passwords:{" "}
+          <input
+            type="number"
+            value={numPasswords}
+            onChange={(e) => setNumPasswords(e.target.value)}
+          />
+        </label>
       </div>
       <button onClick={generatePassword}>Generate Password</button>
       <div>
         <h3>Generated Passwords:</h3>
         <ul>
           {generatedPasswords.map((password, index) => (
-            <li key={index}>{password}</li>
+            <li key={index}>
+              <input value={password} readOnly/>
+            </li>
           ))}
         </ul>
       </div>
