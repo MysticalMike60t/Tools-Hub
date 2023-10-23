@@ -4,7 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # Custom Additions
-/dist
+*/dist
+*/build
+/release
+/releases
 /tools-app-win32-x64
 
 # User-specific files
