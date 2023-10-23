@@ -24,7 +24,25 @@
     background: $primary-v;
   }
 }
-.css-flexbox {
+.page.generators {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    background: $background;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+.page.css-flexbox {
   display: flex;
   align-items: center;
   justify-content: flex-start;
