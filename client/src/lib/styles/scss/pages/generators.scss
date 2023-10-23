@@ -21,6 +21,35 @@
   cursor: pointer;
 
   &:hover {
-    background: $primary;
+    background: $primary-v;
+  }
+}
+.css-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    select {
+      margin-left: 10px;
+    }
+  }
+  .output {
+    pre {
+      text-align: left;
+      background: $background;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  .preview {
+    .flex-container {
+      min-width: 400px;
+      min-height: 100px;
+      background: $background;
+    }
   }
 }

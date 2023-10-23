@@ -35,7 +35,9 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   flex: 1;
-  background-color: #f4f4f4;
+  // background-color: #f4f4f4;
+  color: white;
+  background: $background-light;
   padding: 20px;
 }
 
