@@ -4,7 +4,7 @@ import { Home, About, Generators } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 
 import "./lib/styles/scss/global/global.scss";
-import { CSSFlex, PasswordPolicy } from "./lib/pages/generators/sub";
+import { CSSFlex, PasswordPolicy, Password } from "./lib/pages/generators/sub";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
             <Route index element={<Generators />} />
             <Route path="css-flex" element={<CSSFlex />} />
             <Route path="password-policy" element={<PasswordPolicy />} />
+            <Route path="password" element={<Password />} />
           </Route>
         </Route>
       </Routes>
