@@ -1,6 +1,6 @@
 {
   "name": "tools-app",
-  "version": "0.x.x",
+  "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
