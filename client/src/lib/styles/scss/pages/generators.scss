@@ -24,6 +24,12 @@
     background: $primary;
   }
 }
+.center-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .page.generators {
   display: flex;
   align-items: flex-start;
@@ -48,6 +54,10 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
+  width: fit-content;
+  background: $background-transparent;
+  border-radius: 10px;
+  padding: 20px;
 }
 .page.css-flexbox {
   form {

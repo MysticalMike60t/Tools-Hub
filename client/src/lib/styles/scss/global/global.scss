@@ -37,7 +37,8 @@ body {
   flex: 1;
   // background-color: #f4f4f4;
   color: white;
-  background: $background-light;
+  // background: $background-light;
+  background: transparent;
   padding: 20px;
 
   &::-webkit-scrollbar {
@@ -48,6 +49,23 @@ body {
   }
   &::-webkit-scrollbar-thumb {
     background: $primary;
+  }
+
+  #background {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
+    filter: blur(5px);
+    background: linear-gradient(rgba(47, 50, 65, 0.9), rgba(47, 50, 65, 0.9)),
+      url("../../../assets/images/backgrounds/windows-11-01.jpg");
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform: scale(1.2);
   }
 }
 
