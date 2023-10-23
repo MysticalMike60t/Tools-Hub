@@ -5,6 +5,7 @@
 
 # Custom Additions
 /dist
+/tools-app-win32-x64
 
 # User-specific files
 *.rsuser
