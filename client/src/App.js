@@ -1,9 +1,10 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import { Home, About } from "./lib/pages";
-import { Layout } from "./lib/global/components";
+import { Home, About, Generators } from "./lib/pages";
+import { Layout, SubpageLayout } from "./lib/global/components";
 
 import "./lib/styles/scss/global/global.scss";
+import { CSSFlex } from "./lib/pages/generators/sub";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<>Page not found</>} />
+          <Route path="generators" element={<SubpageLayout />}>
+            <Route index element={<Generators />} />
+            <Route path="css-flex" element={<CSSFlex />} />
+          </Route>
         </Route>
       </Routes>
     </Router>

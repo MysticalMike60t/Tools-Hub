@@ -35,9 +35,22 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   flex: 1;
-  background-color: #f4f4f4;
+  // background-color: #f4f4f4;
+  color: white;
+  background: $background-light;
   padding: 20px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
 }
 
 @import "./header";
+@import "../pages/generators.scss";
 @import "../pages/home.scss";

@@ -1,0 +1,78 @@
+.subpage-goback-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  font-size: 2em;
+
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 50px;
+  margin: 10px;
+  position: fixed;
+
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background: $background;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+  }
+}
+.page.generators {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    background: $background;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+.page.css-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    select {
+      margin-left: 10px;
+      color: white;
+      padding: 5px 10px;
+      outline: none;
+      border: none;
+      background: $background;
+    }
+  }
+  .output {
+    pre {
+      text-align: left;
+      background: $background;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  .preview {
+    .flex-container {
+      min-width: 400px;
+      min-height: 100px;
+      background: $background;
+    }
+  }
+}

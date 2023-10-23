@@ -24,9 +24,12 @@
           margin: 10px 0;
           a {
             text-decoration: none;
-            color: #0074d9;
+            color: white;
+            background: $background;
+            padding: 10px 20px;
+            border-radius: 5px;
             &:hover {
-              text-decoration: underline;
+              filter: brightness(110%);
             }
           }
         }
