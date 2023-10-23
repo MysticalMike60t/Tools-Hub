@@ -1,0 +1,26 @@
+.subpage-goback-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  font-size: 2em;
+
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 50px;
+  margin: 10px;
+  position: fixed;
+
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background: $background;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+  }
+}

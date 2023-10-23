@@ -14,6 +14,7 @@ const path = require("path");
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
+    resizable: false,
     icon: "./lib/images/icons/toolbox.png",
     titleBarStyle: "hidden",
     titleBarOverlay: {
