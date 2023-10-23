@@ -35,6 +35,11 @@
     flex-direction: column;
     select {
       margin-left: 10px;
+      color: white;
+      padding: 5px 10px;
+      outline: none;
+      border: none;
+      background: $background;
     }
   }
   .output {
