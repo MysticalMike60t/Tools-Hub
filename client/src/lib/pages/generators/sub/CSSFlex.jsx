@@ -25,7 +25,7 @@ const CSSFlex = () => {
   const flexItems = [1, 2, 3]; // Example flex items
 
   return (
-    <div className='page css-flexbox'>
+    <div className='page one css-flexbox'>
       <h1>CSS Flexbox Generator</h1>
       <form>
         <label>

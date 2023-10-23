@@ -42,11 +42,13 @@
     }
   }
 }
-.page.css-flexbox {
+.page.one {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+.page.css-flexbox {
   form {
     display: flex;
     gap: 10px;
@@ -73,6 +75,32 @@
       min-width: 400px;
       min-height: 100px;
       background: $background;
+    }
+  }
+}
+.page.password-policy {
+  gap: 10px;
+  .input {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    label {
+      input {
+        margin-left: 10px;
+        color: white;
+        padding: 5px 10px;
+        outline: none;
+        border: none;
+        background: $background;
+      }
+    }
+  }
+  .output {
+    pre {
+      text-align: left;
+      background: $background;
+      padding: 10px;
+      border-radius: 10px;
     }
   }
 }
