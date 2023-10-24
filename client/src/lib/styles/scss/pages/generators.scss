@@ -239,6 +239,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: $background-light;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
   }
 
   .color-box {
@@ -249,7 +253,9 @@
     width: 75px;
     height: 75px;
     margin: 5px;
-    border: 1px solid #000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    // border: 1px solid #000;
   }
 
   button {
@@ -258,6 +264,8 @@
     background: $background-light;
     padding: 10px 20px;
     border-radius: 5px;
+    height: 50px;
+    width: 100%;
     border: none;
     outline: none;
     cursor: pointer;
