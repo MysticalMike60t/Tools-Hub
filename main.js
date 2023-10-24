@@ -1,4 +1,5 @@
-const { app, BrowserWindow, Menu, MenuItem } = require("electron");
+const { BrowserWindow } = require('electron-acrylic-window');
+const { app, Menu, MenuItem } = require("electron");
 const path = require("path");
 
 // app.setUserTasks([
@@ -21,6 +22,11 @@ function createWindow() {
       color: "#2f3241",
       symbolColor: "#74b1be",
       height: 50,
+    },
+    vibrancy: {
+      theme: 'dark', // (default) or 'dark' or '#rrggbbaa'
+      effect: 'acrylic', // (default) or 'blur'
+      disableOnBlur: false, // (default)
     },
     transparent: true,
     webPreferences: {

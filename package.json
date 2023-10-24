@@ -31,5 +31,8 @@
       "output": "dist",
       "buildResources": "public"
     }
+  },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11"
   }
 }

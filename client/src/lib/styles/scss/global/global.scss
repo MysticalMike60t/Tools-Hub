@@ -58,10 +58,10 @@ body {
     left: 0;
     top: 0;
     position: absolute;
-    filter: blur(5px);
-    background: linear-gradient(rgba(47, 50, 65, 0.9), rgba(47, 50, 65, 0.9)),
+    // filter: blur(5px);
+    background: linear-gradient(rgba(47, 50, 65, 0.1), rgba(47, 50, 65, 0.1)),
       url("../../../assets/images/backgrounds/windows-11-01.jpg");
-    opacity: 0.9;
+    opacity: 0.01;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
