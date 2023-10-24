@@ -4,6 +4,7 @@ const Password = () => {
   const [passwordLength, setPasswordLength] = useState(12);
   const [includeUppercase, setIncludeUppercase] = useState(true);
   const [includeSpecialChars, setIncludeSpecialChars] = useState(true);
+  const [includeNumbers, setIncludeNumbers] = useState(true);
   const [numPasswords, setNumPasswords] = useState(1);
   const [generatedPasswords, setGeneratedPasswords] = useState([]);
 
@@ -11,6 +12,7 @@ const Password = () => {
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const specialChars = "!@#$%^&*()_-+=<>?";
+    const numbers = "1234567890";
     let validChars = lowercaseChars;
 
     if (includeUppercase) {
@@ -18,6 +20,9 @@ const Password = () => {
     }
     if (includeSpecialChars) {
       validChars += specialChars;
+    }
+    if (includeNumbers) {
+      validChars += numbers;
     }
 
     let passwords = [];
@@ -62,6 +67,16 @@ const Password = () => {
             type="checkbox"
             checked={includeSpecialChars}
             onChange={() => setIncludeSpecialChars(!includeSpecialChars)}
+          />
+        </label>
+      </div>
+      <div className="input">
+        <label>
+          Include Numbers:{" "}
+          <input
+            type="checkbox"
+            checked={includeNumbers}
+            onChange={() => setIncludeNumbers(!includeNumbers)}
           />
         </label>
       </div>
