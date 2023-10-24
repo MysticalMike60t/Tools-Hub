@@ -209,3 +209,28 @@
     }
   }
 }
+.page.username {
+  div {
+    input {
+      color: white;
+      outline: none;
+      border: none;
+      background: $background-light;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  button {
+    text-decoration: none;
+    color: white;
+    background: $background-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
