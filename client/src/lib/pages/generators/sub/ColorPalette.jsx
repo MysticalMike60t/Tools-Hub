@@ -4,7 +4,7 @@ const ColorPalette = () => {
   const [colors, setColors] = useState(generateRandomPalette());
 
   function generateRandomColor() {
-    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     return randomColor;
   }
 
@@ -20,6 +20,15 @@ const ColorPalette = () => {
     setColors(generateRandomPalette());
   }
 
+  function copyToClipboard(hexCode) {
+    const el = document.createElement('textarea');
+    el.value = hexCode;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  }
+
   return (
     <div className='page one color-palette'>
       <h1>Color Palette Generator</h1>
@@ -29,7 +38,10 @@ const ColorPalette = () => {
             key={index}
             className="color-box"
             style={{ backgroundColor: color }}
-          ></div>
+            onClick={() => copyToClipboard(color)}
+          >
+            {color}
+          </div>
         ))}
       </div>
       <button onClick={regeneratePalette}>Generate New Palette</button>
