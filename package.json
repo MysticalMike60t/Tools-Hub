@@ -1,9 +1,10 @@
 {
   "name": "tools-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -30,5 +31,8 @@
       "output": "dist",
       "buildResources": "public"
     }
+  },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11"
   }
 }

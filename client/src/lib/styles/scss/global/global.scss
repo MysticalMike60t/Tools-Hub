@@ -37,20 +37,42 @@ body {
   flex: 1;
   // background-color: #f4f4f4;
   color: white;
-  background: $background-light;
+  // background: $background-light;
+  // background: transparent;
+  background: rgba(47, 50, 65, 0.5);
   padding: 20px;
 
   &::-webkit-scrollbar {
     width: 10px;
   }
   &::-webkit-scrollbar-track {
-    background: transparent;
+    // background: transparent;
+    background: $background;
   }
   &::-webkit-scrollbar-thumb {
     background: $primary;
+  }
+
+  #background {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
+    // filter: blur(5px);
+    // background: $background-transparent;
+    // background: linear-gradient(rgba(47, 50, 65, 0.1), rgba(47, 50, 65, 0.1)),
+    //   url("../../../assets/images/backgrounds/windows-11-01.jpg");
+    // opacity: 0.2;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // transform: scale(1.2);
   }
 }
 
 @import "./header";
 @import "../pages/generators.scss";
 @import "../pages/home.scss";
+@import "../pages/about.scss";

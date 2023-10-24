@@ -1,4 +1,5 @@
-const { app, BrowserWindow, Menu, MenuItem } = require("electron");
+const { BrowserWindow } = require("electron-acrylic-window");
+const { app } = require("electron");
 const path = require("path");
 
 // app.setUserTasks([
@@ -12,21 +13,39 @@ const path = require("path");
 //   }
 // ])
 
+const navigationBarHeight = 50;
+const windowAcrylicTheme = "dark";
+const windowAcrylicEffect = "acrylic";
+const windowAcrylicDisableOnBlur = false;
+const windowTransparent = true;
+const windowTitleBarStyle = "hidden";
+const windowTitleBarOverlayColor = "#2f3241";
+const windowTitleBarOverlaySymbolColor = "#74b1be";
+const windowsIconPath = "./lib/images/icons/toolbox.png";
+const windowWebPreferencesNodeIntegration = false;
+const windowWebPreferencesContextIsolation = true;
+const windowWebPreferencesSandbox = true;
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     resizable: false,
-    icon: "./lib/images/icons/toolbox.png",
-    titleBarStyle: "hidden",
+    icon: windowsIconPath,
+    titleBarStyle: windowTitleBarStyle,
     titleBarOverlay: {
-      color: "#2f3241",
-      symbolColor: "#74b1be",
-      height: 50,
+      color: windowTitleBarOverlayColor,
+      symbolColor: windowTitleBarOverlaySymbolColor,
+      height: navigationBarHeight,
     },
-    transparent: true,
+    vibrancy: {
+      theme: windowAcrylicTheme, // (default) or 'dark' or '#rrggbbaa'
+      effect: windowAcrylicEffect, // (default) or 'blur'
+      disableOnBlur: windowAcrylicDisableOnBlur, // (default)
+    },
+    transparent: windowTransparent,
     webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
-      sandbox: true,
+      nodeIntegration: windowWebPreferencesNodeIntegration,
+      contextIsolation: windowWebPreferencesContextIsolation,
+      sandbox: windowWebPreferencesSandbox,
       preload: path.join(__dirname, "preload.js"),
     },
   });
@@ -40,57 +59,6 @@ function createWindow() {
   );
 
   mainWindow.loadFile("client/build/index.html");
-
-  // Create a custom menu and set it as the application menu
-  const template = [
-    {
-      label: "File",
-      submenu: [
-        {
-          label: "New",
-          click: () => {
-            // Implement the action for the "New" menu item
-          },
-        },
-        {
-          label: "Open",
-          click: () => {
-            // Implement the action for the "Open" menu item
-          },
-        },
-        {
-          type: "separator",
-        },
-        {
-          label: "Exit",
-          click: () => {
-            app.quit();
-          },
-        },
-      ],
-    },
-    {
-      label: "Edit",
-      submenu: [
-        {
-          label: "Cut",
-          role: "cut",
-        },
-        {
-          label: "Copy",
-          role: "copy",
-        },
-        {
-          label: "Paste",
-          role: "paste",
-        },
-      ],
-    },
-    // Add more menu items as needed
-  ];
-
-  const menu = Menu.buildFromTemplate(template);
-  Menu.setApplicationMenu(menu);
 }
 
 app.whenReady().then(createWindow);

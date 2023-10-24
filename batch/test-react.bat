@@ -1,3 +1,4 @@
 @echo off
-cd ../
+cd ../client
+npm i
 npm start

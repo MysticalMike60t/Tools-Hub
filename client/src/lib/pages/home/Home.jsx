@@ -6,7 +6,7 @@ function Home() {
     <div className="page">
       <h1>Welcome to the Tools Hub</h1>
       <p>Find the right tool for the job!</p>
-
+      <div className="bar"></div>
       <div className="tool-categories">
         <h2>Tool Categories</h2>
         <ul>

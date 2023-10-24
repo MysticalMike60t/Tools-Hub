@@ -9,7 +9,9 @@ const SubpageLayout = () => {
   return (
     <>
         <button className="subpage-goback-fixed" onClick={goBack}>{"<"}</button>
-        <Outlet />
+        <div className="center-top">
+          <Outlet />
+        </div>
     </>
   )
 }
