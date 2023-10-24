@@ -16,7 +16,7 @@
   border: none;
   outline: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  background: $background;
+  background: $background-light;
   color: white;
   cursor: pointer;
 
@@ -40,7 +40,7 @@
   .nav-link {
     text-decoration: none;
     color: white;
-    background: $background;
+    background: $background-light;
     padding: 10px 20px;
     border-radius: 5px;
     &:hover {
@@ -58,6 +58,43 @@
   background: $background-transparent;
   border-radius: 10px;
   padding: 20px;
+  // .input {
+  //   input {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   select {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   button {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   a {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
+  // ul {
+  //   li {
+  //     input {
+  //       outline: 1px solid #ccc !important;
+  //     }
+  //   }
+  // }
+  // button {
+  //   outline: 1px solid #ccc !important;
+  // }
+  // .output {
+  //   pre {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   input {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
+  // .preview {
+  //   pre {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
 }
 .page.css-flexbox {
   form {
@@ -70,13 +107,13 @@
       padding: 5px 10px;
       outline: none;
       border: none;
-      background: $background;
+      background: $background-light;
     }
   }
   .output {
     pre {
       text-align: left;
-      background: $background;
+      background: $background-light;
       padding: 10px;
       border-radius: 10px;
     }
@@ -85,7 +122,7 @@
     .flex-container {
       min-width: 400px;
       min-height: 100px;
-      background: $background;
+      background: $background-light;
     }
   }
 }
@@ -102,14 +139,14 @@
         padding: 5px 10px;
         outline: none;
         border: none;
-        background: $background;
+        background: $background-light;
       }
     }
   }
   .output {
     pre {
       text-align: left;
-      background: $background;
+      background: $background-light;
       padding: 10px;
       border-radius: 10px;
     }
@@ -119,7 +156,7 @@
   button {
     text-decoration: none;
     color: white;
-    background: $background;
+    background: $background-light;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -140,7 +177,7 @@
         padding: 5px 10px;
         outline: none;
         border: none;
-        background: $background;
+        background: $background-light;
       }
     }
   }
@@ -163,7 +200,7 @@
         color: white;
         border: none;
         outline: none;
-        background: $background;
+        background: $background-light;
         border-radius: 5px;
         padding: 10px;
         margin: 0;
