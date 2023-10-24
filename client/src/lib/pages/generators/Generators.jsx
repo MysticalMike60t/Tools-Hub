@@ -16,6 +16,9 @@ const Generators = () => {
       <Link className="nav-link" to="/generators/username">
         Username
       </Link>
+      <Link className="nav-link" to="/generators/color-palette">
+        Color Palette
+      </Link>
     </div>
   );
 };

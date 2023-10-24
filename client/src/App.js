@@ -9,6 +9,7 @@ import {
   PasswordPolicy,
   Password,
   Username,
+  ColorPalette,
 } from "./lib/pages/generators/sub";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="password-policy" element={<PasswordPolicy />} />
             <Route path="password" element={<Password />} />
             <Route path="username" element={<Username />} />
+            <Route path="color-palette" element={<ColorPalette />} />
           </Route>
         </Route>
       </Routes>
