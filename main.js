@@ -13,26 +13,38 @@ const path = require("path");
 //   }
 // ])
 
+const navigationBarHeight = 50;
+const windowAcrylicTheme = "dark";
+const windowAcrylicEffect = "acrylic";
+const windowTransparent = true;
+const windowTitleBarStyle = "hidden";
+const windowTitleBarOverlayColor = "#2f3241";
+const windowTitleBarOverlaySymbolColor = "#74b1be";
+const windowsIconPath = "./lib/images/icons/toolbox.png";
+const windowWebPreferencesNodeIntegration = false;
+const windowWebPreferencesContextIsolation = true;
+const windowWebPreferencesSandbox = true;
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     resizable: false,
-    icon: "./lib/images/icons/toolbox.png",
-    titleBarStyle: "hidden",
+    icon: windowsIconPath,
+    titleBarStyle: windowTitleBarStyle,
     titleBarOverlay: {
-      color: "#2f3241",
-      symbolColor: "#74b1be",
-      height: 50,
+      color: windowTitleBarOverlayColor,
+      symbolColor: windowTitleBarOverlaySymbolColor,
+      height: navigationBarHeight,
     },
     vibrancy: {
-      theme: "dark", // (default) or 'dark' or '#rrggbbaa'
-      effect: "acrylic", // (default) or 'blur'
+      theme: windowAcrylicTheme, // (default) or 'dark' or '#rrggbbaa'
+      effect: windowAcrylicEffect, // (default) or 'blur'
       disableOnBlur: false, // (default)
     },
-    transparent: true,
+    transparent: windowTransparent,
     webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
-      sandbox: true,
+      nodeIntegration: windowWebPreferencesNodeIntegration,
+      contextIsolation: windowWebPreferencesContextIsolation,
+      sandbox: windowWebPreferencesSandbox,
       preload: path.join(__dirname, "preload.js"),
     },
   });
