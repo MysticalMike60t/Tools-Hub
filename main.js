@@ -1,62 +1,11 @@
 const { BrowserWindow } = require("electron-acrylic-window");
-const { app } = require("electron");
-const path = require("path");
+const { app, dialog } = require("electron");
 const { autoUpdater } = require("electron-updater");
+const path = require("path");
 
+// Set your GitHub PAT token here
 process.env.GH_TOKEN =
   "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";
-
-autoUpdater.autoDownload = false;
-autoUpdater.allowPrerelease = true; // Allow pre-release updates
-autoUpdater.autoInstallOnAppQuit = false; // You might want to set this to true for production
-
-// Set the dev update config to true to enable update checks in development
-autoUpdater.updateConfigPath = "./dev-app-update.yml"; // Point to your update config file
-
-autoUpdater.checkForUpdatesAndNotify(); // Check for updates and notify the user
-
-// Listen for update events
-autoUpdater.on("update-available", () => {
-  // An update is available, you can notify the user here
-});
-
-autoUpdater.on("update-downloaded", () => {
-  // Update is downloaded and ready to be installed
-  // You can prompt the user to install the update
-  const { dialog } = require("electron");
-
-  dialog.showMessageBox(
-    {
-      type: "info",
-      title: "Update Available",
-      message:
-        "A new version of the app is available. Do you want to install it now?",
-      buttons: ["Yes", "No"],
-    },
-    (buttonIndex) => {
-      if (buttonIndex === 0) {
-        // User clicked "Yes," so quit the app and install the update
-        autoUpdater.quitAndInstall();
-      }
-    }
-  );
-});
-
-// Listen for errors
-autoUpdater.on("error", (error) => {
-  // Handle update errors
-});
-
-// app.setUserTasks([
-//   {
-//     program: process.execPath,
-//     arguments: '--new-window',
-//     iconPath: process.execPath,
-//     iconIndex: 0,
-//     title: 'New Window',
-//     description: 'Create a new window'
-//   }
-// ])
 
 const navigationBarHeight = 50;
 const windowAcrylicTheme = "dark";
@@ -66,7 +15,7 @@ const windowTransparent = true;
 const windowTitleBarStyle = "hidden";
 const windowTitleBarOverlayColor = "#2f3241";
 const windowTitleBarOverlaySymbolColor = "#74b1be";
-const windowsIconPath = "./lib/images/icons/toolbox.png";
+const windowsIconPath = path.join(__dirname, "lib/images/icons/toolbox.png");
 const windowWebPreferencesNodeIntegration = false;
 const windowWebPreferencesContextIsolation = true;
 const windowWebPreferencesSandbox = true;
@@ -82,9 +31,9 @@ function createWindow() {
       height: navigationBarHeight,
     },
     vibrancy: {
-      theme: windowAcrylicTheme, // (default) or 'dark' or '#rrggbbaa'
-      effect: windowAcrylicEffect, // (default) or 'blur'
-      disableOnBlur: windowAcrylicDisableOnBlur, // (default)
+      theme: windowAcrylicTheme,
+      effect: windowAcrylicEffect,
+      disableOnBlur: windowAcrylicDisableOnBlur,
     },
     transparent: windowTransparent,
     webPreferences: {
@@ -108,33 +57,45 @@ function createWindow() {
 
 app.on("ready", () => {
   // Configure autoUpdater
-  autoUpdater.autoDownload = true;
+  autoUpdater.autoDownload = false;
+  autoUpdater.allowPrerelease = true;
+  autoUpdater.autoInstallOnAppQuit = false;
+
+  // Set the dev update config to true to enable update checks in development
+  autoUpdater.updateConfigPath = "./dev-app-update.yml";
+
+  // Set the GitHub token for authentication
+  autoUpdater.setFeedURL({
+    provider: "github",
+    owner: "MysticalMike60t",
+    repo: "Tools-App",
+    token: process.env.GH_TOKEN,
+  });
+
+  // Check for updates and notify the user
   autoUpdater.checkForUpdatesAndNotify();
 
   createWindow();
 });
+
 autoUpdater.on("update-available", () => {
   console.log("Update available");
   // Notify the user or add more logic here
 });
 
-autoUpdater.on("update-downloaded", (info) => {
-  const { dialog } = require("electron");
-
+autoUpdater.on("update-downloaded", () => {
   const options = {
     type: "info",
     title: "Update Available",
     message:
       "A new version of the app is available. Do you want to install it now?",
-    buttons: ["Install Now", "Install Later"],
+    buttons: ["Yes", "No"],
   };
 
   dialog.showMessageBox(options, (buttonIndex) => {
     if (buttonIndex === 0) {
-      // User clicked "Install Now," so quit the app and install the update
+      // User clicked "Yes," so quit the app and install the update
       autoUpdater.quitAndInstall();
-    } else {
-      // User clicked "Install Later," you can provide a notification or option to install later
     }
   });
 });
