@@ -1,2 +1,3 @@
 @echo off
-electron ../main.js
+cd ../
+npm start
