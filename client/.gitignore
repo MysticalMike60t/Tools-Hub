@@ -6,6 +6,8 @@
 /releases
 /tools-app-win32-x64
 
+*.nosave.*
+
 # dependencies
 /node_modules
 /.pnp
