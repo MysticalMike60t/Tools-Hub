@@ -6,7 +6,13 @@ const { autoUpdater } = require("electron-updater");
 process.env.GH_TOKEN =
   "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";
 
-autoUpdater.autoDownload = false; // You can set this to true if you want to download updates automatically
+autoUpdater.autoDownload = false;
+autoUpdater.allowPrerelease = true; // Allow pre-release updates
+autoUpdater.autoInstallOnAppQuit = false; // You might want to set this to true for production
+
+// Set the dev update config to true to enable update checks in development
+autoUpdater.updateConfigPath = path.join(__dirname, "dev-app-update.yml"); // Point to your update config file
+
 autoUpdater.checkForUpdatesAndNotify(); // Check for updates and notify the user
 
 // Listen for update events
@@ -102,7 +108,7 @@ function createWindow() {
 
 app.on("ready", () => {
   // Configure autoUpdater
-  autoUpdater.autoDownload = false;
+  autoUpdater.autoDownload = true;
   autoUpdater.checkForUpdatesAndNotify();
 
   createWindow();
@@ -112,9 +118,25 @@ autoUpdater.on("update-available", () => {
   // Notify the user or add more logic here
 });
 
-autoUpdater.on("update-downloaded", () => {
-  console.log("Update downloaded");
-  // Prompt the user to install the update or add more logic here
+autoUpdater.on("update-downloaded", (info) => {
+  const { dialog } = require("electron");
+
+  const options = {
+    type: "info",
+    title: "Update Available",
+    message:
+      "A new version of the app is available. Do you want to install it now?",
+    buttons: ["Install Now", "Install Later"],
+  };
+
+  dialog.showMessageBox(options, (buttonIndex) => {
+    if (buttonIndex === 0) {
+      // User clicked "Install Now," so quit the app and install the update
+      autoUpdater.quitAndInstall();
+    } else {
+      // User clicked "Install Later," you can provide a notification or option to install later
+    }
+  });
 });
 
 autoUpdater.on("error", (error) => {
