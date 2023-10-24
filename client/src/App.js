@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import { Home, About, Generators } from "./lib/pages";
+import { Home, About, Generators, ThirdParty } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 
 import "./lib/styles/scss/global/global.scss";
@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="3rd-party" element={<ThirdParty />} />
           <Route path="*" element={<>Page not found!</>} />
           <Route path="generators" element={<SubpageLayout />}>
             <Route index element={<Generators />} />
