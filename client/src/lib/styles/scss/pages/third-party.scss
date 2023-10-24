@@ -1,0 +1,22 @@
+.page.third-party {
+  h1 {
+    font-size: 2em;
+  }
+  .text {
+    background: $background-transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10% 0 10%;
+
+    a {
+      color: white;
+      text-decoration: none;
+      background: $background-light;
+      padding: 10px 20px;
+      border-radius: 10px;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+}

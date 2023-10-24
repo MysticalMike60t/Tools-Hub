@@ -1,17 +1,20 @@
 {
   "name": "tools-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^27.0.2"
+    "electron": "^27.0.2",
+    "electron-builder": "^24.6.4"
   },
   "build": {
     "appId": "cadenmf.com",
@@ -30,9 +33,15 @@
     "directories": {
       "output": "dist",
       "buildResources": "public"
+    },
+    "publish": {
+      "provider": "github",
+      "releaseType": "release",
+      "repo": "MysticalMike60t/Tools-App"
     }
   },
   "dependencies": {
-    "electron-acrylic-window": "^0.5.11"
+    "electron-acrylic-window": "^0.5.11",
+    "electron-updater": "^6.1.4"
   }
 }
