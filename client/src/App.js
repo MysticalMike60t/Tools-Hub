@@ -16,7 +16,7 @@ function App() {
           <Route path="*" element={<>Page not found</>} />
           <Route path="generators" element={<SubpageLayout />}>
             <Route index element={<Generators />} />
-            <Route path="css-flex" element={<CSSFlex />} />
+            <Route path="css-flexbox" element={<CSSFlex />} />
             <Route path="password-policy" element={<PasswordPolicy />} />
             <Route path="password" element={<Password />} />
           </Route>

@@ -15,21 +15,6 @@ function Home() {
           </li>
         </ul>
       </div>
-
-      {/* <div className="featured-tools">
-        <h2>Featured Tools</h2>
-        <div className="tool">
-          <img src="/tool1.jpg" alt="Tool 1" />
-          <h3>Tool 1</h3>
-          <p>Description of Tool 1</p>
-        </div>
-
-        <div className="tool">
-          <img src="/tool2.jpg" alt="Tool 2" />
-          <h3>Tool 2</h3>
-          <p>Description of Tool 2</p>
-        </div>
-      </div> */}
     </div>
   );
 }
