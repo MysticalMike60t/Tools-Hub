@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="*" element={<>Page not found</>} />
+          <Route path="*" element={<>Page not found!</>} />
           <Route path="generators" element={<SubpageLayout />}>
             <Route index element={<Generators />} />
             <Route path="css-flexbox" element={<CSSFlex />} />
