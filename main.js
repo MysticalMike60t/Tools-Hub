@@ -1,6 +1,45 @@
 const { BrowserWindow } = require("electron-acrylic-window");
 const { app } = require("electron");
 const path = require("path");
+const { autoUpdater } = require("electron-updater");
+
+process.env.GH_TOKEN =
+  "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";
+
+autoUpdater.autoDownload = false; // You can set this to true if you want to download updates automatically
+autoUpdater.checkForUpdatesAndNotify(); // Check for updates and notify the user
+
+// Listen for update events
+autoUpdater.on("update-available", () => {
+  // An update is available, you can notify the user here
+});
+
+autoUpdater.on("update-downloaded", () => {
+  // Update is downloaded and ready to be installed
+  // You can prompt the user to install the update
+  const { dialog } = require("electron");
+
+  dialog.showMessageBox(
+    {
+      type: "info",
+      title: "Update Available",
+      message:
+        "A new version of the app is available. Do you want to install it now?",
+      buttons: ["Yes", "No"],
+    },
+    (buttonIndex) => {
+      if (buttonIndex === 0) {
+        // User clicked "Yes," so quit the app and install the update
+        autoUpdater.quitAndInstall();
+      }
+    }
+  );
+});
+
+// Listen for errors
+autoUpdater.on("error", (error) => {
+  // Handle update errors
+});
 
 // app.setUserTasks([
 //   {
@@ -61,7 +100,27 @@ function createWindow() {
   mainWindow.loadFile("client/build/index.html");
 }
 
-app.whenReady().then(createWindow);
+app.on("ready", () => {
+  // Configure autoUpdater
+  autoUpdater.autoDownload = false;
+  autoUpdater.checkForUpdatesAndNotify();
+
+  createWindow();
+});
+autoUpdater.on("update-available", () => {
+  console.log("Update available");
+  // Notify the user or add more logic here
+});
+
+autoUpdater.on("update-downloaded", () => {
+  console.log("Update downloaded");
+  // Prompt the user to install the update or add more logic here
+});
+
+autoUpdater.on("error", (error) => {
+  console.error("Update error:", error);
+  // Handle update errors
+});
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
