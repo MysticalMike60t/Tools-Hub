@@ -14,6 +14,7 @@
 */releases
 /tools-app-win32-x64
 */tools-app-win32-x64
+*.note.local.*
 
 # User-specific files
 *.rsuser
