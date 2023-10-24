@@ -7,6 +7,10 @@
 /tools-app-win32-x64
 
 *.nosave.*
+*.remove.*
+*.local.*
+*.debug.*
+*.log.*
 
 # dependencies
 /node_modules
