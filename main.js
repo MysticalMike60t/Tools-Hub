@@ -1,5 +1,5 @@
 const { BrowserWindow } = require("electron-acrylic-window");
-const { app, Menu, MenuItem } = require("electron");
+const { app } = require("electron");
 const path = require("path");
 
 // app.setUserTasks([
@@ -16,6 +16,7 @@ const path = require("path");
 const navigationBarHeight = 50;
 const windowAcrylicTheme = "dark";
 const windowAcrylicEffect = "acrylic";
+const windowAcrylicDisableOnBlur = false;
 const windowTransparent = true;
 const windowTitleBarStyle = "hidden";
 const windowTitleBarOverlayColor = "#2f3241";
@@ -38,7 +39,7 @@ function createWindow() {
     vibrancy: {
       theme: windowAcrylicTheme, // (default) or 'dark' or '#rrggbbaa'
       effect: windowAcrylicEffect, // (default) or 'blur'
-      disableOnBlur: false, // (default)
+      disableOnBlur: windowAcrylicDisableOnBlur, // (default)
     },
     transparent: windowTransparent,
     webPreferences: {
@@ -58,57 +59,6 @@ function createWindow() {
   );
 
   mainWindow.loadFile("client/build/index.html");
-
-  // Create a custom menu and set it as the application menu
-  const template = [
-    {
-      label: "File",
-      submenu: [
-        {
-          label: "New",
-          click: () => {
-            // Implement the action for the "New" menu item
-          },
-        },
-        {
-          label: "Open",
-          click: () => {
-            // Implement the action for the "Open" menu item
-          },
-        },
-        {
-          type: "separator",
-        },
-        {
-          label: "Exit",
-          click: () => {
-            app.quit();
-          },
-        },
-      ],
-    },
-    {
-      label: "Edit",
-      submenu: [
-        {
-          label: "Cut",
-          role: "cut",
-        },
-        {
-          label: "Copy",
-          role: "copy",
-        },
-        {
-          label: "Paste",
-          role: "paste",
-        },
-      ],
-    },
-    // Add more menu items as needed
-  ];
-
-  const menu = Menu.buildFromTemplate(template);
-  Menu.setApplicationMenu(menu);
 }
 
 app.whenReady().then(createWindow);
