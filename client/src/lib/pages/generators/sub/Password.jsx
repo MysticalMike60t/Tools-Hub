@@ -96,7 +96,7 @@ const Password = () => {
         <ul>
           {generatedPasswords.map((password, index) => (
             <li key={index}>
-              <input value={password} readOnly/>
+              <input value={password} readOnly />
             </li>
           ))}
         </ul>

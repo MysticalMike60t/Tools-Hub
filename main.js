@@ -1,4 +1,4 @@
-const { BrowserWindow } = require('electron-acrylic-window');
+const { BrowserWindow } = require("electron-acrylic-window");
 const { app, Menu, MenuItem } = require("electron");
 const path = require("path");
 
@@ -24,8 +24,8 @@ function createWindow() {
       height: 50,
     },
     vibrancy: {
-      theme: 'dark', // (default) or 'dark' or '#rrggbbaa'
-      effect: 'acrylic', // (default) or 'blur'
+      theme: "dark", // (default) or 'dark' or '#rrggbbaa'
+      effect: "acrylic", // (default) or 'blur'
       disableOnBlur: false, // (default)
     },
     transparent: true,
