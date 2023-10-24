@@ -37,7 +37,8 @@
     "publish": {
       "provider": "github",
       "releaseType": "release",
-      "repo": "MysticalMike60t/Tools-App"
+      "repo": "Tools-App",
+      "owner": "MysticalMike60t"
     }
   },
   "dependencies": {
