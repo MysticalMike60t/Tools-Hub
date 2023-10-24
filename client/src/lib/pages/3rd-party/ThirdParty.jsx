@@ -1,16 +1,21 @@
 import React from "react";
 
 const ThirdParty = () => {
-  const downloadUrl =
-    "https://api.cadenmf.com/downloads/tools/x64tools_10-24-2023.rar";
-  const fileName = "x64tools_10-24-2023.rar";
-
   return (
     <div className="page third-party">
       <h1>3rd Party Tools</h1>
       <p className="text">
-        <a href={downloadUrl} download={fileName}>
-          Download Nirsoft Tools
+        <a
+          href="https://api.cadenmf.com/downloads/tools/x64tools_10-24-2023.rar"
+          download="x64tools_10-24-2023.rar"
+        >
+          Nirsoft Tools
+        </a>
+        <a
+          href="https://angusj.com/resourcehacker/reshacker_setup.exe"
+          download="reshacker_setup.exe"
+        >
+          Resource Hacker
         </a>
       </p>
     </div>
