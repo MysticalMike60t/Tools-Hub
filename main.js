@@ -11,7 +11,7 @@ autoUpdater.allowPrerelease = true; // Allow pre-release updates
 autoUpdater.autoInstallOnAppQuit = false; // You might want to set this to true for production
 
 // Set the dev update config to true to enable update checks in development
-autoUpdater.updateConfigPath = path.join(__dirname, "dev-app-update.yml"); // Point to your update config file
+autoUpdater.updateConfigPath = "./dev-app-update.yml"; // Point to your update config file
 
 autoUpdater.checkForUpdatesAndNotify(); // Check for updates and notify the user
 
