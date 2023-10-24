@@ -3,10 +3,16 @@
     font-size: 2em;
   }
   .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     background: $background-transparent;
     padding: 20px;
     border-radius: 10px;
     margin: 0 10% 0 10%;
+    gap: 10px;
 
     a {
       color: white;
