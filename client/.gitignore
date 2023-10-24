@@ -11,6 +11,8 @@
 *.local.*
 *.debug.*
 *.log.*
+*.env.js
+env.js
 
 # dependencies
 /node_modules
