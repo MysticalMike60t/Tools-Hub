@@ -15,6 +15,15 @@ function Home() {
           </li>
         </ul>
       </div>
+      <div className="extra">
+        <a
+          href="https://github.com/MysticalMike60t/Tools-App/releases/latest"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Newest Release
+        </a>
+      </div>
     </div>
   );
 }

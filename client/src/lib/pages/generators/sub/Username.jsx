@@ -1,42 +1,14 @@
 import React, { useState } from "react";
+import words from "an-array-of-english-words";
 
 const Username = () => {
   const [username, setUsername] = useState("");
 
-  const englishWords = [
-    "apple",
-    "banana",
-    "cherry",
-    "dog",
-    "elephant",
-    "fox",
-    "grape",
-    "honey",
-    "ice",
-    "jungle",
-    "kiwi",
-    "lemon",
-    "mango",
-    "noodle",
-    "orange",
-    "pear",
-    "quartz",
-    "raspberry",
-    "strawberry",
-    "tiger",
-    "unicorn",
-    "violet",
-    "watermelon",
-    "xylophone",
-    "yellow",
-    "zebra",
-  ];
-
   const generateUsername = () => {
     const randomWord1 =
-      englishWords[Math.floor(Math.random() * englishWords.length)];
+      words[Math.floor(Math.random() * words.length)];
     const randomWord2 =
-      englishWords[Math.floor(Math.random() * englishWords.length)];
+    words[Math.floor(Math.random() * words.length)];
     setUsername(`${randomWord1}_${randomWord2}`);
   };
 

@@ -3,6 +3,15 @@ const thirdPartyTools = [
     category: "Windows Tools",
     sections: [
       {
+        sectionName: "Microsoft",
+        tools: [
+          {
+            name: "SysInternals Suite",
+            link: "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+          },
+        ],
+      },
+      {
         sectionName: "Nirsoft",
         tools: [
           {
@@ -39,6 +48,47 @@ const thirdPartyTools = [
           {
             name: "PEX Setup",
             link: "http://www.heaventools.com/download/pexsetup.exe?r1=pexCom",
+          },
+        ],
+      },
+      {
+        sectionName: "Miscellaneous",
+        tools: [
+          {
+            name: "Winget UI",
+            link: "https://github.com/marticliment/WingetUI/releases/download/2.1.1/WingetUI.Installer.exe",
+          },
+          {
+            name: "Bulk Crap Uninstaller",
+            link: "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.7/BCUninstaller_5.7_setup.exe",
+          },
+          {
+            name: "Bulk Crap Uninstaller Portable",
+            link: "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.7/BCUninstaller_5.7_portable.zip",
+          },
+          {
+            name: "Bleach Bit",
+            link: "https://download.bleachbit.org/BleachBit-4.4.2-setup.exe",
+          },
+          {
+            name: "Bleach Bit Portable",
+            link: "https://download.bleachbit.org/BleachBit-4.4.2-portable.zip",
+          },
+          {
+            name: "Neat Download Manager",
+            link: "https://www.neatdownloadmanager.com/file/NeatDM_setup.exe",
+          },
+          {
+            name: "SHELL",
+            link: "https://nilesoft.org/download/shell/1.9/setup.exe"
+          },
+          {
+            name: "DNS Changer",
+            link: "https://github.com/Zaczero/DNSChanger/releases/download/v2.3/DNSChanger.exe"
+          },
+          {
+            name: "CamooZ",
+            link: "https://www.camooz.de/downloads/CamooZ.7.4.1.zip"
           },
         ],
       },
