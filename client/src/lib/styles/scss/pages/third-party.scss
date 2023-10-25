@@ -2,20 +2,91 @@
   h1 {
     font-size: 2em;
   }
-  .text {
-    background: $background-transparent;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0 10% 0 10%;
-
-    a {
+  .input {
+    input {
       color: white;
       text-decoration: none;
       background: $background-light;
       padding: 10px 20px;
-      border-radius: 10px;
-      &:hover {
-        filter: brightness(110%);
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin-bottom: 20px;
+      &:focus,&:target,&:checked {
+        outline: 1px solid #ccc;
+      }
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: $background-transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10% 0 10%;
+    gap: 10px;
+
+    .category {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      border: 2px solid #ccc;
+      padding: 0;
+      margin: 0;
+      h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      .section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        border-top: 2px solid #ccc;
+        &:nth-child(1) {
+          border-top: none;
+        }
+        h3 {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 10px 0;
+          padding: 0;
+        }
+        .links {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 10px;
+          a {
+            color: white;
+            text-decoration: none;
+            background: $background-light;
+            padding: 10px 20px;
+            border-radius: 10px;
+            &:hover {
+              filter: brightness(110%);
+            }
+          }
+        }
       }
     }
   }
