@@ -25,5 +25,5 @@ jobs:
         cache-dependency-path: client/package-lock.json
     - run: npm i
       working-directory: client
-    - run: electron-builder
+    - run: npm run build --if-present
       working-directory: client
