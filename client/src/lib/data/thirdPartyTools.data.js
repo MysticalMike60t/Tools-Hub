@@ -44,7 +44,24 @@ const thirdPartyTools = [
       },
     ],
   },
-  // Add more categories and sections as needed
+  {
+    category: "Editing",
+    sections: [
+      {
+        sectionName: "Free Software",
+        tools: [
+          {
+            name: "Inkscape",
+            link: "https://inkscape.org/gallery/item/42333/inkscape-1.3_2023-07-21_0e150ed6c4-x64_31XBEKV.msi",
+          },
+          {
+            name: "Davinci Resolve",
+            link: "https://www.blackmagicdesign.com/products/davinciresolve#",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default thirdPartyTools;

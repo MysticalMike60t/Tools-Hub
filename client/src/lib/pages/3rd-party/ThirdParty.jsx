@@ -29,25 +29,23 @@ const ThirdParty = () => {
         />
       </div>
       <p className="text">
-        <span className="category">
-          {filteredTools.map((category, categoryIndex) => (
-            <span key={categoryIndex}>
-              <h2>{category.category}</h2>
-              {category.sections.map((section, sectionIndex) => (
-                <span className="section" key={sectionIndex}>
-                  <h3>{section.sectionName}</h3>
-                  <div className="links">
-                    {section.tools.map((tool, toolIndex) => (
-                      <a key={toolIndex} href={tool.link} download={tool.name}>
-                        {tool.name}
-                      </a>
-                    ))}
-                  </div>
-                </span>
-              ))}
-            </span>
-          ))}
-        </span>
+        {filteredTools.map((category, categoryIndex) => (
+          <span className="category" key={categoryIndex}>
+            <h2>{category.category}</h2>
+            {category.sections.map((section, sectionIndex) => (
+              <span className="section" key={sectionIndex}>
+                <h3>{section.sectionName}</h3>
+                <div className="links">
+                  {section.tools.map((tool, toolIndex) => (
+                    <a key={toolIndex} href={tool.link} download={tool.name}>
+                      {tool.name}
+                    </a>
+                  ))}
+                </div>
+              </span>
+            ))}
+          </span>
+        ))}
       </p>
     </div>
   );
