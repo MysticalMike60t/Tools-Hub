@@ -74,6 +74,22 @@ const thirdPartyTools = [
             name: "Bleach Bit Portable",
             link: "https://download.bleachbit.org/BleachBit-4.4.2-portable.zip",
           },
+          {
+            name: "Neat Download Manager",
+            link: "https://www.neatdownloadmanager.com/file/NeatDM_setup.exe",
+          },
+          {
+            name: "SHELL",
+            link: "https://nilesoft.org/download/shell/1.9/setup.exe"
+          },
+          {
+            name: "DNS Changer",
+            link: "https://github.com/Zaczero/DNSChanger/releases/download/v2.3/DNSChanger.exe"
+          },
+          {
+            name: "CamooZ",
+            link: "https://www.camooz.de/downloads/CamooZ.7.4.1.zip"
+          },
         ],
       },
     ],
