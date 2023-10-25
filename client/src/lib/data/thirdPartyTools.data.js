@@ -51,6 +51,31 @@ const thirdPartyTools = [
           },
         ],
       },
+      {
+        sectionName: "Miscellaneous",
+        tools: [
+          {
+            name: "Winget UI",
+            link: "https://github.com/marticliment/WingetUI/releases/download/2.1.1/WingetUI.Installer.exe",
+          },
+          {
+            name: "Bulk Crap Uninstaller",
+            link: "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.7/BCUninstaller_5.7_setup.exe",
+          },
+          {
+            name: "Bulk Crap Uninstaller Portable",
+            link: "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.7/BCUninstaller_5.7_portable.zip",
+          },
+          {
+            name: "Bleach Bit",
+            link: "https://download.bleachbit.org/BleachBit-4.4.2-setup.exe",
+          },
+          {
+            name: "Bleach Bit Portable",
+            link: "https://download.bleachbit.org/BleachBit-4.4.2-portable.zip",
+          },
+        ],
+      },
     ],
   },
   {
