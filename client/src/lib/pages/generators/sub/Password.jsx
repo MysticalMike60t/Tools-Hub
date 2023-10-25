@@ -14,7 +14,7 @@ const Password = () => {
     const specialChars = "!@#$%^&*()_-+=<>?";
     const numbers = "1234567890";
     let validChars = lowercaseChars;
-
+  
     if (includeUppercase) {
       validChars += uppercaseChars;
     }
@@ -24,13 +24,13 @@ const Password = () => {
     if (includeNumbers) {
       validChars += numbers;
     }
-
+  
     let passwords = [];
     for (let i = 0; i < numPasswords; i++) {
       let password = "";
       for (let j = 0; j < passwordLength; j++) {
-        const randomIndex = Math.floor(Math.random() * validChars.length);
-        password += validChars[randomIndex];
+        const randomIndex = window.crypto.getRandomValues(new Uint32Array(1))[0] % validChars.length;
+        password += validChars.charAt(randomIndex);
       }
       passwords.push(password);
     }
