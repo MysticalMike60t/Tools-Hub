@@ -19,6 +19,9 @@ const Generators = () => {
       <Link className="nav-link" to="/generators/color-palette">
         Color Palette
       </Link>
+      <Link className="nav-link" to="/generators/word">
+        Word
+      </Link>
     </div>
   );
 };

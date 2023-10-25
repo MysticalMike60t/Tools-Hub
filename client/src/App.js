@@ -1,16 +1,18 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+
 import { Home, About, Generators, ThirdParty } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
-
-import "./lib/styles/scss/global/global.scss";
 import {
   CSSFlex,
   PasswordPolicy,
   Password,
   Username,
   ColorPalette,
+  Word,
 } from "./lib/pages/generators/sub";
+
+import "./lib/styles/scss/global/global.scss";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
             <Route path="password" element={<Password />} />
             <Route path="username" element={<Username />} />
             <Route path="color-palette" element={<ColorPalette />} />
+            <Route path="word" element={<Word />} />
           </Route>
         </Route>
       </Routes>

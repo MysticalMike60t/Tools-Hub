@@ -3,6 +3,15 @@ const thirdPartyTools = [
     category: "Windows Tools",
     sections: [
       {
+        sectionName: "Microsoft",
+        tools: [
+          {
+            name: "SysInternals Suite",
+            link: "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+          },
+        ],
+      },
+      {
         sectionName: "Nirsoft",
         tools: [
           {
