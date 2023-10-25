@@ -2,12 +2,23 @@
   h1 {
     font-size: 2em;
   }
+  .input {
+    input {
+      color: white;
+      text-decoration: none;
+      background: $background-light;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin-bottom: 20px;
+    }
+  }
   .text {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
     background: $background-transparent;
     padding: 20px;
     border-radius: 10px;
@@ -15,6 +26,7 @@
     gap: 10px;
 
     .category {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -23,20 +35,19 @@
       padding: 0;
       margin: 0;
       h2 {
-        width: 100%;
         text-align: left;
         margin: 0;
+        padding: 0;
         padding-top: 20px;
         padding-left: 20px;
       }
       .section {
-        width: 90%;
+        width: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin: 10px;
+        flex-direction: column;
+        margin-top: 10px;
         gap: 10px;
         padding: 10px;
         position: relative;
@@ -45,6 +56,7 @@
           border-top: none;
         }
         h3 {
+          width: 100%;
           text-align: left;
           margin: 0 0 10px 0;
           padding: 0;
