@@ -12,6 +12,12 @@
       border: none;
       outline: none;
       margin-bottom: 20px;
+      &:focus,&:target,&:checked {
+        outline: 1px solid #ccc;
+      }
+      &::placeholder {
+        color: white;
+      }
     }
   }
   .text {
@@ -40,6 +46,7 @@
         padding: 0;
         padding-top: 20px;
         padding-left: 20px;
+        padding-bottom: 20px;
       }
       .section {
         width: 100%;
