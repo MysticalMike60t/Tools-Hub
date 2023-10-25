@@ -8,8 +8,6 @@ const ThirdParty = () => {
     setSearchQuery(e.target.value);
   };
 
-  // Sample data with preset categories and sections
-
   const filteredTools = thirdPartyTools.map((category) => ({
     ...category,
     sections: category.sections.filter((section) =>
