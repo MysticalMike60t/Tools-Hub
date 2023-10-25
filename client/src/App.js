@@ -10,6 +10,7 @@ import {
   Username,
   ColorPalette,
   Word,
+  Image,
 } from "./lib/pages/generators/sub";
 
 import "./lib/styles/scss/global/global.scss";
@@ -31,6 +32,7 @@ function App() {
             <Route path="username" element={<Username />} />
             <Route path="color-palette" element={<ColorPalette />} />
             <Route path="word" element={<Word />} />
+            <Route path="image" element={<Image />} />
           </Route>
         </Route>
       </Routes>
