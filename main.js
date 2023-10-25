@@ -12,9 +12,9 @@ const githubOwner = "MysticalMike60t";
 
 const updateProvider = "github";
 const updateConfigPath = "./dev-app-update.yml";
-const autoUpdateDownload = false;
+const autoUpdateDownload = true;
 const autoUpdateAllowPrerelease = true;
-const autoUpdateInstallOnAppQuit = false;
+const autoUpdateInstallOnAppQuit = true;
 
 const navigationBarHeight = 50;
 const windowAcrylicTheme = "dark";
