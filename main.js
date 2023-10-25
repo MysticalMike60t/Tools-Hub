@@ -5,7 +5,7 @@ const path = require("path");
 
 // Set your GitHub PAT token here
 process.env.GH_TOKEN =
-  "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";
+  "";
 
 const navigationBarHeight = 50;
 const windowAcrylicTheme = "dark";
