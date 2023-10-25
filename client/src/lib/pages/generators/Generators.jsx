@@ -22,9 +22,9 @@ const Generators = () => {
       <Link className="nav-link" to="/generators/word">
         Word
       </Link>
-      <Link className="nav-link" to="/generators/image">
+      {/* <Link className="nav-link" to="/generators/image">
         Image
-      </Link>
+      </Link> */}
     </div>
   );
 };
