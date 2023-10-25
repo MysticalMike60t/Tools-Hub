@@ -3,15 +3,25 @@ const { app, dialog } = require("electron");
 const { autoUpdater } = require("electron-updater");
 const path = require("path");
 
-// Set your GitHub PAT token here
-process.env.GH_TOKEN =
-  "";
+process.env.GH_TOKEN = "";
+
+const indexHTMLPath = "client/build/index.html";
+
+const githubRepo = "Tools-App";
+const githubOwner = "MysticalMike60t";
+
+const updateProvider = "github";
+const updateConfigPath = "./dev-app-update.yml";
+const autoUpdateDownload = false;
+const autoUpdateAllowPrerelease = true;
+const autoUpdateInstallOnAppQuit = false;
 
 const navigationBarHeight = 50;
 const windowAcrylicTheme = "dark";
 const windowAcrylicEffect = "acrylic";
 const windowAcrylicDisableOnBlur = false;
 const windowTransparent = true;
+const windowResizable = false;
 const windowTitleBarStyle = "hidden";
 const windowTitleBarOverlayColor = "#2f3241";
 const windowTitleBarOverlaySymbolColor = "#74b1be";
@@ -19,10 +29,12 @@ const windowsIconPath = path.join(__dirname, "lib/images/icons/toolbox.png");
 const windowWebPreferencesNodeIntegration = false;
 const windowWebPreferencesContextIsolation = true;
 const windowWebPreferencesSandbox = true;
+const windowPreloadFileName = "preload.js";
+const windowPreloadPath = path.join(__dirname, windowPreloadFileName);
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    resizable: false,
+    resizable: windowResizable,
     icon: windowsIconPath,
     titleBarStyle: windowTitleBarStyle,
     titleBarOverlay: {
@@ -40,7 +52,7 @@ function createWindow() {
       nodeIntegration: windowWebPreferencesNodeIntegration,
       contextIsolation: windowWebPreferencesContextIsolation,
       sandbox: windowWebPreferencesSandbox,
-      preload: path.join(__dirname, "preload.js"),
+      preload: windowPreloadPath,
     },
   });
 
@@ -52,23 +64,23 @@ function createWindow() {
     }
   );
 
-  mainWindow.loadFile("client/build/index.html");
+  mainWindow.loadFile(indexHTMLPath);
 }
 
 app.on("ready", () => {
   // Configure autoUpdater
-  autoUpdater.autoDownload = false;
-  autoUpdater.allowPrerelease = true;
-  autoUpdater.autoInstallOnAppQuit = false;
+  autoUpdater.autoDownload = autoUpdateDownload;
+  autoUpdater.allowPrerelease = autoUpdateAllowPrerelease;
+  autoUpdater.autoInstallOnAppQuit = autoUpdateInstallOnAppQuit;
 
   // Set the dev update config to true to enable update checks in development
-  autoUpdater.updateConfigPath = "./dev-app-update.yml";
+  autoUpdater.updateConfigPath = updateConfigPath;
 
   // Set the GitHub token for authentication
   autoUpdater.setFeedURL({
-    provider: "github",
-    owner: "MysticalMike60t",
-    repo: "Tools-App",
+    provider: updateProvider,
+    owner: githubOwner,
+    repo: githubRepo,
     token: process.env.GH_TOKEN,
   });
 
