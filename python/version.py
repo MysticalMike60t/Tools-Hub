@@ -43,13 +43,13 @@ def update_yaml(yaml_path, new_version):
 
 # List of package.json and YAML file paths to update
 package_json_files = [
-    '../package.json',
-    '../client/package.json',
+    './package.json',
+    './client/package.json',
     # Add more package.json file paths as needed
 ]
 
 yaml_files = [
-    '../dev-app-update.yml',
+    './dev-app-update.yml',
     # Add more YAML file paths as needed
 ]
 
