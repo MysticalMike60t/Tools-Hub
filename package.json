@@ -1,14 +1,9 @@
 {
   "name": "tools-app",
   "version": "1.0.7",
+  "author": "Caden Finkelstein",
+  "license": "ISC",
   "description": "Tools Hub, your one stop shop for all tools for PC",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "tools",
     "windows",
@@ -17,11 +12,20 @@
     "apps",
     "applications"
   ],
-  "author": "Caden Finkelstein",
-  "license": "ISC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "electron": "^27.0.2",
     "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11",
+    "electron-updater": "^6.1.4"
   },
   "build": {
     "appId": "cadenmf.com",
@@ -47,9 +51,5 @@
       "repo": "Tools-App",
       "owner": "MysticalMike60t"
     }
-  },
-  "dependencies": {
-    "electron-acrylic-window": "^0.5.11",
-    "electron-updater": "^6.1.4"
   }
 }
