@@ -1,0 +1,8 @@
+.git/
+dist/
+build/
+node_modules/
+client/dist/
+client/build/
+client/.git/
+client/node_modules/
