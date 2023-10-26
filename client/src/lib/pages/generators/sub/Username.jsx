@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import words from "an-array-of-english-words";
+import { defaultPageClassName } from "../../../global/config/index.config";
 
 const Username = () => {
   const [username, setUsername] = useState("");
@@ -13,7 +14,7 @@ const Username = () => {
   };
 
   return (
-    <div className="page one username">
+    <div className={`${defaultPageClassName} one username`}>
       <div>
         <h1>Generated Username:</h1>
         <input value={username || "Click the Button!"} readonly />

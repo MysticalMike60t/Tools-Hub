@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { defaultPageClassName } from '../../../global/config/index.config';
 
 const CSSFlex = () => {
   const [flexProperties, setFlexProperties] = useState({
@@ -25,7 +26,7 @@ const CSSFlex = () => {
   const flexItems = [1, 2, 3]; // Example flex items
 
   return (
-    <div className='page one css-flexbox'>
+    <div className={`${defaultPageClassName} one css-flexbox`}>
       <h1>CSS Flexbox Generator</h1>
       <form>
         <label>

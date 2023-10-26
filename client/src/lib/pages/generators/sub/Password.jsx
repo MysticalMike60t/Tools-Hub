@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { defaultPageClassName } from "../../../global/config/index.config";
 
 const Password = () => {
   const [passwordLength, setPasswordLength] = useState(12);
@@ -14,7 +15,7 @@ const Password = () => {
     const specialChars = "!@#$%^&*()_-+=<>?";
     const numbers = "1234567890";
     let validChars = lowercaseChars;
-  
+
     if (includeUppercase) {
       validChars += uppercaseChars;
     }
@@ -24,12 +25,14 @@ const Password = () => {
     if (includeNumbers) {
       validChars += numbers;
     }
-  
+
     let passwords = [];
     for (let i = 0; i < numPasswords; i++) {
       let password = "";
       for (let j = 0; j < passwordLength; j++) {
-        const randomIndex = window.crypto.getRandomValues(new Uint32Array(1))[0] % validChars.length;
+        const randomIndex =
+          window.crypto.getRandomValues(new Uint32Array(1))[0] %
+          validChars.length;
         password += validChars.charAt(randomIndex);
       }
       passwords.push(password);
@@ -38,7 +41,7 @@ const Password = () => {
   };
 
   return (
-    <div className="page one password">
+    <div className={`${defaultPageClassName} one password`}>
       <h2>Password Generator</h2>
       <div className="input">
         <label>
