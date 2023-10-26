@@ -3,9 +3,6 @@ import json
 from bs4 import BeautifulSoup
 import re
 
-# Define the directory where your files are located
-directory = "/"
-
 # Function to validate a hexadecimal color code
 def is_valid_hex_color(color):
     if not color:
@@ -55,6 +52,18 @@ def update_scss_theme_color(file_path, new_color):
     except (FileNotFoundError, UnicodeDecodeError):
         print(f"Failed to update SCSS variable in {file_path}")
 
+# Function to update the theme color in a JavaScript config file
+def update_js_config_theme_color(file_path, new_color):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            js_content = file.read()
+            updated_js = re.sub(r'const themeColor = ".*?";', f'const themeColor = "{new_color}";', js_content)
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(updated_js)
+            print(f"Updated themeColor in {file_path}")
+    except (FileNotFoundError, UnicodeDecodeError):
+        print(f"Failed to update themeColor in {file_path}")
+
 # Accept user input for the new theme color with validation
 while True:
     new_theme_color = input("Enter the new theme color (e.g., #FF5733): ")
@@ -62,6 +71,9 @@ while True:
         break
     else:
         print("Invalid color code. Please enter a valid hexadecimal color code.")
+
+# Define the directory where your files are located
+directory = "../"
 
 # Loop through all files in the directory
 for root, dirs, files in os.walk(directory):
@@ -73,3 +85,5 @@ for root, dirs, files in os.walk(directory):
             update_html_theme_color(file_path, new_theme_color)
         elif file_name.lower() == "_vars.scss":
             update_scss_theme_color(file_path, new_theme_color)
+        elif file_name.endswith(".config.js"):
+            update_js_config_theme_color(file_path, new_theme_color)
