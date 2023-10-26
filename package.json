@@ -1,7 +1,17 @@
 {
   "name": "tools-app",
   "version": "1.0.7",
-  "description": "",
+  "author": "Caden Finkelstein",
+  "license": "ISC",
+  "description": "Tools Hub, your one stop shop for all tools for PC",
+  "keywords": [
+    "tools",
+    "windows",
+    "windows 10",
+    "windows 11",
+    "apps",
+    "applications"
+  ],
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -9,17 +19,18 @@
     "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "electron": "^27.0.2",
     "electron-builder": "^24.6.4"
   },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11",
+    "electron-updater": "^6.1.4"
+  },
   "build": {
     "appId": "cadenmf.com",
     "productName": "Tools Hub",
-    "copyright": "Copyright \u00c2\u00a9 2023 Caden Finkelstein",
+    "copyright": "Copyright © 2023 Caden Finkelstein",
     "win": {
       "icon": "./lib/images/icons/toolbox.png"
     },
@@ -40,9 +51,5 @@
       "repo": "Tools-App",
       "owner": "MysticalMike60t"
     }
-  },
-  "dependencies": {
-    "electron-acrylic-window": "^0.5.11",
-    "electron-updater": "^6.1.4"
   }
 }
