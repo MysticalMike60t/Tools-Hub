@@ -60,4 +60,4 @@ If you have any questions or need assistance, feel free to contact us.
 
 Thank you for using the Windows 10 Tools App! We hope it simplifies your Windows experience and enhances your productivity.
 
-[Download Now](https://github.com/MysticalMike60t/Tools-App/releases/latest/download/Tools.Hub.Setup.1.0.6.exe)
+[Download Now](https://github.com/MysticalMike60t/Tools-App/releases/latest)
