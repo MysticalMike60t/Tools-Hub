@@ -1,4 +1,4 @@
-# Windows 10 Tools App
+# Windows Tools App
 
 ![App Logo](lib/images/icons/toolbox.png)
 
@@ -21,7 +21,7 @@ The Windows 10 Tools App is a collection of essential utilities and tools design
 
 ## Installation
 
-To use the Windows 10 Tools App, follow these steps:
+To use the Windows Tools App, follow these steps:
 
 1. [Download the latest release](https://github.com/MysticalMike60t/Tools-App/releases/latest).
 2. Run the installer and follow the installation instructions.
@@ -37,7 +37,7 @@ After installation, launch the app and explore its features:
 
 ## System Requirements
 
-- Windows 10
+- Windows 10 or Windows 11
 
 ## Contributing
 
@@ -54,10 +54,10 @@ This project is licensed under the [Apache-2.0 License](LICENSE) - see the [LICE
 
 ## Contact
 
-If you have any questions or need assistance, feel free to contact us at your@email.com.
+If you have any questions or need assistance, feel free to contact us.
 
 ---
 
-Thank you for using the Windows 10 Tools App! We hope it simplifies your Windows 10 experience and enhances your productivity.
+Thank you for using the Windows 10 Tools App! We hope it simplifies your Windows experience and enhances your productivity.
 
 [Download Now](https://github.com/MysticalMike60t/Tools-App/releases/latest/download/Tools.Hub.Setup.1.0.6.exe)
