@@ -9,6 +9,10 @@ const thirdPartyTools = [
             name: "SysInternals Suite",
             link: "https://download.sysinternals.com/files/SysinternalsSuite.zip",
           },
+          {
+            name: ".NET SDK",
+            link: "https://dotnet.microsoft.com/en-us/download/dotnet",
+          },
         ],
       },
       {
@@ -80,15 +84,15 @@ const thirdPartyTools = [
           },
           {
             name: "SHELL",
-            link: "https://nilesoft.org/download/shell/1.9/setup.exe"
+            link: "https://nilesoft.org/download/shell/1.9/setup.exe",
           },
           {
             name: "DNS Changer",
-            link: "https://github.com/Zaczero/DNSChanger/releases/download/v2.3/DNSChanger.exe"
+            link: "https://github.com/Zaczero/DNSChanger/releases/download/v2.3/DNSChanger.exe",
           },
           {
             name: "CamooZ",
-            link: "https://www.camooz.de/downloads/CamooZ.7.4.1.zip"
+            link: "https://www.camooz.de/downloads/CamooZ.7.4.1.zip",
           },
         ],
       },
