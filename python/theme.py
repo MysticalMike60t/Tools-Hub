@@ -3,11 +3,14 @@ import json
 from bs4 import BeautifulSoup
 import re
 
-# Define the new theme color you want to set
-new_theme_color = "#74b1be"
-
 # Define the directory where your files are located
-directory = "../"
+directory = "/"
+
+# Function to validate a hexadecimal color code
+def is_valid_hex_color(color):
+    if not color:
+        return False
+    return re.match(r'^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', color) is not None
 
 # Function to update the theme color in a manifest file
 def update_manifest_theme_color(file_path, new_color):
@@ -51,6 +54,14 @@ def update_scss_theme_color(file_path, new_color):
             print(f"Updated SCSS variable in {file_path}")
     except (FileNotFoundError, UnicodeDecodeError):
         print(f"Failed to update SCSS variable in {file_path}")
+
+# Accept user input for the new theme color with validation
+while True:
+    new_theme_color = input("Enter the new theme color (e.g., #FF5733): ")
+    if is_valid_hex_color(new_theme_color):
+        break
+    else:
+        print("Invalid color code. Please enter a valid hexadecimal color code.")
 
 # Loop through all files in the directory
 for root, dirs, files in os.walk(directory):
