@@ -17,7 +17,7 @@
 *.note.local.*
 NodeModulesToCSV*.class
 NodeModulesToCSV.csv
-/*-folders.csv
+*-folders.csv
 .cache/
 .local/
 .env
