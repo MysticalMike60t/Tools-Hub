@@ -15,6 +15,9 @@
 /tools-app-win32-x64
 */tools-app-win32-x64
 *.note.local.*
+NodeModulesToCSV*.class
+NodeModulesToCSV.csv
+/*-folders.csv
 
 # User-specific files
 *.rsuser
