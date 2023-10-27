@@ -26,6 +26,7 @@ NodeModulesToCSV.csv
 .env.test
 .env.production
 *.log
+.vscode/
 
 # User-specific files
 *.rsuser
