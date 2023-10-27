@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NodeModulesToCSV {
-    public static String folderName = "client";
+    public static String folderName = "node_modules";
     public static void main(String[] args) {
         String rootDirectory = "/"; // Change this to your root directory
         String csvFilePath = folderName + "-" + "folders.csv";
