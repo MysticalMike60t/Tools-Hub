@@ -18,6 +18,14 @@
 NodeModulesToCSV*.class
 NodeModulesToCSV.csv
 /*-folders.csv
+.cache/
+.local/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
 
 # User-specific files
 *.rsuser
