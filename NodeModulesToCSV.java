@@ -6,7 +6,7 @@ import java.util.List;
 
 public class NodeModulesToCSV {
     public static void main(String[] args) {
-        String rootDirectory = "/path/to/your/root/directory"; // Change this to your root directory
+        String rootDirectory = "./"; // Change this to your root directory
         String csvFilePath = "node_modules.csv";
 
         List<String> modulesList = new ArrayList<>();
