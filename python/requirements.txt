@@ -1,3 +1,5 @@
 pyyaml
 pyinstaller
 beautifulsoup4
+subprocess
+re

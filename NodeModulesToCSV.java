@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NodeModulesToCSV {
+    public static String folderName = "client";
     public static void main(String[] args) {
-        String rootDirectory = "./"; // Change this to your root directory
-        String csvFilePath = "node_modules.csv";
+        String rootDirectory = "/"; // Change this to your root directory
+        String csvFilePath = folderName + "-" + "folders.csv";
 
         List<String> modulesList = new ArrayList<>();
         findNodeModules(new File(rootDirectory), modulesList);
@@ -19,7 +20,7 @@ public class NodeModulesToCSV {
         File[] files = directory.listFiles();
         if (files != null) {
             for (File file : files) {
-                if (file.isDirectory() && file.getName().equals("node_modules")) {
+                if (file.isDirectory() && file.getName().equals(folderName)) {
                     modulesList.add(file.getAbsolutePath());
                 } else if (file.isDirectory()) {
                     findNodeModules(file, modulesList);

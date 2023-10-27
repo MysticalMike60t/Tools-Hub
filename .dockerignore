@@ -6,3 +6,14 @@ client/dist/
 client/build/
 client/.git/
 client/node_modules/
+/dist
+/build
+*/dist
+*/build
+/release
+/releases
+*/release
+*/releases
+/tools-app-win32-x64
+*/tools-app-win32-x64
+*.note.local.*
