@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { defaultPageClassName } from "../../global/config/index.config";
 
 const Generators = () => {
   return (
-    <div className="page generators">
+    <div className={`${defaultPageClassName} generators`}>
       <Link className="nav-link" to="/generators/css-flexbox">
         CSS Flex Box
       </Link>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { defaultPageClassName } from "../../../global/config/index.config";
 
 const PasswordPolicy = () => {
   const [policy, setPolicy] = useState({
@@ -19,7 +20,7 @@ const PasswordPolicy = () => {
   };
 
   return (
-    <div className="page one password-policy">
+    <div className={`${defaultPageClassName} one password-policy`}>
       <h1>Password Policy Generator</h1>
       <div className="input">
         <label>

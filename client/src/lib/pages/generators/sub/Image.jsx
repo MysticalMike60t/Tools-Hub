@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { defaultPageClassName } from '../../../global/config/index.config';
 
 const Image = () => {
   const [imageData, setImageData] = useState(null);
@@ -22,7 +23,7 @@ const Image = () => {
   };
 
   return (
-    <div className='page one image'>
+    <div className={`${defaultPageClassName} one image`}>
       <h2>Random Image Generator</h2>
       <button onClick={generateNewImage}>Generate New Image</button>
       {imageData && <img src={imageData} alt="Random" />}
