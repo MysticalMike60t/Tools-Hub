@@ -6,10 +6,8 @@ const Username = () => {
   const [username, setUsername] = useState("");
 
   const generateUsername = () => {
-    const randomWord1 =
-      words[Math.floor(Math.random() * words.length)];
-    const randomWord2 =
-    words[Math.floor(Math.random() * words.length)];
+    const randomWord1 = words[Math.floor(Math.random() * words.length)];
+    const randomWord2 = words[Math.floor(Math.random() * words.length)];
     setUsername(`${randomWord1}_${randomWord2}`);
   };
 

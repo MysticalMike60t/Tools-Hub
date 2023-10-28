@@ -12,7 +12,9 @@
       border: none;
       outline: none;
       margin-bottom: 20px;
-      &:focus,&:target,&:checked {
+      &:focus,
+      &:target,
+      &:checked {
         outline: 1px solid #ccc;
       }
       &::placeholder {

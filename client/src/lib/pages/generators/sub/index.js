@@ -6,4 +6,12 @@ import ColorPalette from "./ColorPalette";
 import Word from "./Word";
 import Image from "./Image";
 
-export { CSSFlex, PasswordPolicy, Password, Username, ColorPalette, Word, Image };
+export {
+  CSSFlex,
+  PasswordPolicy,
+  Password,
+  Username,
+  ColorPalette,
+  Word,
+  Image,
+};

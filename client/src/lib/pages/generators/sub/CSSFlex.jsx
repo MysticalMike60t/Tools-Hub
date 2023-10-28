@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { defaultPageClassName } from '../../../global/config/index.config';
+import React, { useState } from "react";
+import { defaultPageClassName } from "../../../global/config/index.config";
 
 const CSSFlex = () => {
   const [flexProperties, setFlexProperties] = useState({
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'stretch',
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
   });
 
   const handleChange = (e) => {
@@ -16,7 +16,7 @@ const CSSFlex = () => {
   const generateCSS = () => {
     const { flexDirection, justifyContent, alignItems } = flexProperties;
     return {
-      display: 'flex',
+      display: "flex",
       flexDirection: flexDirection,
       justifyContent: justifyContent,
       alignItems: alignItems,
@@ -31,7 +31,11 @@ const CSSFlex = () => {
       <form>
         <label>
           Flex Direction:
-          <select name="flexDirection" value={flexProperties.flexDirection} onChange={handleChange}>
+          <select
+            name="flexDirection"
+            value={flexProperties.flexDirection}
+            onChange={handleChange}
+          >
             <option value="row">Row</option>
             <option value="column">Column</option>
           </select>
@@ -39,7 +43,11 @@ const CSSFlex = () => {
 
         <label>
           Justify Content:
-          <select name="justifyContent" value={flexProperties.justifyContent} onChange={handleChange}>
+          <select
+            name="justifyContent"
+            value={flexProperties.justifyContent}
+            onChange={handleChange}
+          >
             <option value="flex-start">Flex Start</option>
             <option value="center">Center</option>
             <option value="flex-end">Flex End</option>
@@ -48,7 +56,11 @@ const CSSFlex = () => {
 
         <label>
           Align Items:
-          <select name="alignItems" value={flexProperties.alignItems} onChange={handleChange}>
+          <select
+            name="alignItems"
+            value={flexProperties.alignItems}
+            onChange={handleChange}
+          >
             <option value="stretch">Stretch</option>
             <option value="flex-start">Flex Start</option>
             <option value="center">Center</option>
