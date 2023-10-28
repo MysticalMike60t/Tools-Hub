@@ -1,6 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT UI
+<p style="padding:10px;background:rgba(200,200,200,0.1);border-radius:5px;box-shadow:0 0 10px 0 rgba(0,0,0,0.1);outline:1px solid rgba(200,200,200,0.6);color:rgba(250,250,250,1);">
+    This is the UI for the application, it is compiled into HTML, and then displayed.
+</p>
 
 ## Available Scripts
 
