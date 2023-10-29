@@ -5,6 +5,14 @@
 /release
 /releases
 /tools-app-win32-x64
+.cache/
+.local/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.lo
 
 *.nosave.*
 *.remove.*

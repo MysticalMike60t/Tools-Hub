@@ -17,7 +17,16 @@
 *.note.local.*
 NodeModulesToCSV*.class
 NodeModulesToCSV.csv
-/*-folders.csv
+*-folders.csv
+.cache/
+.local/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.log
+.vscode/
 
 # User-specific files
 *.rsuser
