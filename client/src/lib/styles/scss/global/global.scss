@@ -73,8 +73,13 @@ body {
   }
 }
 
-h1, h2, p, div, span {
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8),-2px 3px 30px rgba(141, 213, 255, 0.30);
+h1,
+h2,
+p,
+div,
+span {
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8),
+    -2px 3px 30px rgba(141, 213, 255, 0.3);
 }
 
 @import "./header";

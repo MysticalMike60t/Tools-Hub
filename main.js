@@ -37,6 +37,7 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     resizable: windowResizable,
     icon: windowsIconPath,
+    frame: false,
     titleBarStyle: windowTitleBarStyle,
     titleBarOverlay: {
       color: windowTitleBarOverlayColor,
