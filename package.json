@@ -1,6 +1,6 @@
 {
   "name": "tools-hub",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "Caden Finkelstein",
   "license": "ISC",
   "description": "Tools Hub, your one stop shop for all tools for PC",
@@ -30,7 +30,7 @@
   "build": {
     "appId": "cadenmf.com",
     "productName": "Tools Hub",
-    "copyright": "Copyright Ã‚Â© 2023 Caden Finkelstein",
+    "copyright": "Copyright \u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a9 2023 Caden Finkelstein",
     "win": {
       "icon": "./lib/images/icons/toolbox.png"
     },
