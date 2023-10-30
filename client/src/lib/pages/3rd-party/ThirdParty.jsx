@@ -37,9 +37,14 @@ const ThirdParty = () => {
                 <h3>{section.sectionName}</h3>
                 <div className="links">
                   {section.tools.map((tool, toolIndex) => (
-                    <a key={toolIndex} href={tool.link} download={tool.name}>
-                      {tool.name}
-                    </a>
+                    <>
+                      {/* <a key={toolIndex} href={tool.link} download={tool.name}>
+                        {tool.name}
+                      </a> */}
+                      <a key={toolIndex} href={tool.link}>
+                        {tool.name}
+                      </a>
+                    </>
                   ))}
                 </div>
               </span>
