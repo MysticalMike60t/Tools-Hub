@@ -30,7 +30,7 @@
   "build": {
     "appId": "cadenmf.com",
     "productName": "Tools Hub",
-    "copyright": "Copyright \u00c3\u201a\u00c2\u00a9 2023 Caden Finkelstein",
+    "copyright": "Copyright Ã‚Â© 2023 Caden Finkelstein",
     "win": {
       "icon": "./lib/images/icons/toolbox.png"
     },
