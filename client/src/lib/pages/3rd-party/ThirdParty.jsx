@@ -41,7 +41,12 @@ const ThirdParty = () => {
                       {/* <a key={toolIndex} href={tool.link} download={tool.name}>
                         {tool.name}
                       </a> */}
-                      <a key={toolIndex} href={tool.link}>
+                      <a
+                        key={toolIndex}
+                        href={tool.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {tool.name}
                       </a>
                     </>
