@@ -17,6 +17,8 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
+    "build": "electron-builder",
+    "npx-build": "npx electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -30,7 +32,7 @@
   "build": {
     "appId": "cadenmf.com",
     "productName": "Tools Hub",
-    "copyright": "Copyright \u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00a9 2023 Caden Finkelstein",
+    "copyright": "Copyright Ãƒâ€šÃ‚Â© 2023 Caden Finkelstein",
     "win": {
       "icon": "./lib/images/icons/toolbox.png"
     },
