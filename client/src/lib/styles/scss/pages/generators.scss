@@ -55,7 +55,6 @@
   flex-direction: column;
   gap: 10px;
   width: fit-content;
-  background: $background-transparent;
   border-radius: 10px;
   padding: 20px;
   // .input {
@@ -248,6 +247,7 @@
   }
 
   .color-box {
+    text-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
