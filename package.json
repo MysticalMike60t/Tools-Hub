@@ -2,15 +2,19 @@
   "name": "tools-hub",
   "version": "1.0.12",
   "author": "Caden Finkelstein",
-  "license": "ISC",
+  "license": "MIT",
   "description": "Tools Hub, your one stop shop for all tools for PC",
   "keywords": [
     "tools",
-    "windows",
     "windows 10",
     "windows 11",
     "apps",
-    "applications"
+    "applications",
+    "windows",
+    "utilities",
+    "software",
+    "hub",
+    "management"
   ],
   "main": "main.js",
   "scripts": {
