@@ -1,0 +1,18 @@
+.page.converters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    background: $background-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}

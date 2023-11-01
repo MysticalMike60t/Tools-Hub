@@ -19,6 +19,9 @@ function Home() {
           <li>
             <Link to="/generators">Generators</Link>
           </li>
+          <li>
+            <Link to="/converters">Converters</Link>
+          </li>
         </ul>
       </div>
       <div className="extra">

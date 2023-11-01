@@ -1,0 +1,79 @@
+.center-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.page.one {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 20px;
+  // .input {
+  //   input {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   select {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   button {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   a {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
+  // ul {
+  //   li {
+  //     input {
+  //       outline: 1px solid #ccc !important;
+  //     }
+  //   }
+  // }
+  // button {
+  //   outline: 1px solid #ccc !important;
+  // }
+  // .output {
+  //   pre {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  //   input {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
+  // .preview {
+  //   pre {
+  //     outline: 1px solid #ccc !important;
+  //   }
+  // }
+}
+.subpage-goback-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  font-size: 2em;
+
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 50px;
+  margin: 10px;
+  position: fixed;
+
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background: $background-light;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background: $primary;
+  }
+}
