@@ -16,3 +16,51 @@
     }
   }
 }
+.page.binary-text {
+  .wrapper {
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 50vw;
+      max-width: 80vw;
+      color: white;
+      outline: none;
+      border: none;
+      background: $background-light;
+      padding: 10px;
+      border-radius: 5px;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        // background: transparent;
+        background: $background;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $primary;
+      }
+    }
+    button {
+      color: white;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      background: $background-light;
+      transition: 100ms ease all;
+      &:hover {
+        background: $background-lighter;
+      }
+    }
+    .output {
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      background: $background-light;
+    }
+  }
+}
