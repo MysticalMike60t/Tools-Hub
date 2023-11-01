@@ -17,6 +17,10 @@ const thirdPartyTools = [
             name: "PowerToys",
             link: "https://github.com/microsoft/PowerToys/releases/latest",
           },
+          {
+            name: "C++ Build Tools",
+            link: "https://aka.ms/vs/17/release/vs_BuildTools.exe",
+          },
         ],
       },
       {
