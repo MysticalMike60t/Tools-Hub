@@ -13,6 +13,10 @@ const thirdPartyTools = [
             name: ".NET SDK",
             link: "https://dotnet.microsoft.com/en-us/download/dotnet",
           },
+          {
+            name: "PowerToys",
+            link: "https://github.com/microsoft/PowerToys/releases/latest",
+          },
         ],
       },
       {
