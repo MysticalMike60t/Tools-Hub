@@ -1,0 +1,52 @@
+@echo off
+
+REM Updated 11/1/2023 12:03pm
+
+code --install-extension alexdima.copy-relative-path
+code --install-extension antoniormrzz.electron-snippets
+code --install-extension bierner.markdown-preview-github-styles
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension burkeholland.simple-react-snippets
+code --install-extension christian-kohler.path-intellisense
+code --install-extension danielpinto8zz6.c-cpp-compile-run
+code --install-extension dracula-theme.theme-dracula
+code --install-extension dsanders11.vscode-electron-build-tools
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension ecmel.vscode-html-css
+code --install-extension esbenp.prettier-vscode
+code --install-extension github.vscode-github-actions
+code --install-extension idleberg.electron-builder
+code --install-extension inferrinizzard.prettier-sql-vscode
+code --install-extension IronGeek.vscode-env
+code --install-extension jorgeserrano.vscode-csharp-snippets
+code --install-extension Meezilla.json
+code --install-extension mgmcdermott.vscode-language-babel
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-dotnettools.csdevkit
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-dotnettools.vscode-dotnet-runtime
+code --install-extension ms-dotnettools.vscodeintellicode-csharp
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.cmake-tools
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension ms-vscode.cpptools-themes
+code --install-extension ms-vscode.js-debug-nightly
+code --install-extension msjsdiag.vscode-react-native
+code --install-extension npclaudiu.vscode-gn
+code --install-extension redhat.java
+code --install-extension ritwickdey.LiveServer
+code --install-extension rodrigovallades.es7-react-js-snippets
+code --install-extension tal7aouy.icons
+code --install-extension twxs.cmake
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension ZainChen.json
+code --install-extension zhang-renyang.vscode-react
