@@ -19,10 +19,13 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
   "theme_color": "#74b1be",
   "background_color": "#ffffff",
   "form_factor": "wide",
-  "orientation": "landscape"
+  "orientation": "landscape",
+  "id": "/",
+  "lang": "en"
 }
