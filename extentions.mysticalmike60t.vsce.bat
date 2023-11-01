@@ -2,163 +2,163 @@
 
 REM Updated 11/1/2023 1:40pm
 
-code --install-extension aaron-bond.better-comments
-code --install-extension alefragnani.Bookmarks
-code --install-extension alefragnani.project-manager
-code --install-extension alexcvzz.vscode-sqlite
-code --install-extension alexdima.copy-relative-path
-code --install-extension amazonwebservices.aws-toolkit-vscode
-code --install-extension Angular.ng-template
-code --install-extension anseki.vscode-color
-code --install-extension antoniormrzz.electron-snippets
-code --install-extension batisteo.vscode-django
-code --install-extension bierner.markdown-preview-github-styles
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension brapifra.phpserver
-code --install-extension burkeholland.simple-react-snippets
-code --install-extension christian-kohler.npm-intellisense
-code --install-extension christian-kohler.path-intellisense
-code --install-extension cschlosser.doxdocgen
-code --install-extension danielpinto8zz6.c-cpp-compile-run
-code --install-extension Dart-Code.dart-code
-code --install-extension Dart-Code.flutter
-code --install-extension DavidAnson.vscode-markdownlint
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension DEVSENSE.composer-php-vscode
-code --install-extension DEVSENSE.intelli-php-vscode
-code --install-extension DEVSENSE.phptools-vscode
-code --install-extension DEVSENSE.profiler-php-vscode
-code --install-extension donjayamanne.githistory
-code --install-extension donjayamanne.jquerysnippets
-code --install-extension donjayamanne.python-environment-manager
-code --install-extension donjayamanne.python-extension-pack
-code --install-extension DotJoshJohnson.xml
-code --install-extension dracula-theme.theme-dracula
-code --install-extension dsanders11.vscode-electron-build-tools
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension ecmel.vscode-html-css
-code --install-extension EditorConfig.EditorConfig
-code --install-extension esbenp.prettier-vscode
-code --install-extension felipecaputo.git-project-manager
-code --install-extension firefox-devtools.vscode-firefox-debug
-code --install-extension formulahendry.auto-close-tag
-code --install-extension formulahendry.auto-complete-tag
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension formulahendry.code-runner
-code --install-extension GitHub.copilot
-code --install-extension GitHub.copilot-chat
-code --install-extension GitHub.github-vscode-theme
-code --install-extension GitHub.remotehub
-code --install-extension github.vscode-github-actions
-code --install-extension GitHub.vscode-pull-request-github
-code --install-extension golang.go
-code --install-extension GrapeCity.gc-excelviewer
-code --install-extension GraphQL.vscode-graphql
-code --install-extension GraphQL.vscode-graphql-syntax
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension hbenl.vscode-test-explorer
-code --install-extension idleberg.electron-builder
-code --install-extension inferrinizzard.prettier-sql-vscode
-code --install-extension IronGeek.vscode-env
-code --install-extension jeff-hykin.better-cpp-syntax
-code --install-extension johnpapa.Angular2
-code --install-extension johnpapa.vscode-peacock
-code --install-extension jorgeserrano.vscode-csharp-snippets
-code --install-extension k--kato.intellij-idea-keybindings
-code --install-extension KevinRose.vsc-python-indent
-code --install-extension leizongmin.node-module-intellisense
-code --install-extension mechatroner.rainbow-csv
-code --install-extension Meezilla.json
-code --install-extension mgmcdermott.vscode-language-babel
-code --install-extension mhutchie.git-graph
-code --install-extension mikestead.dotenv
-code --install-extension mrmlnc.vscode-scss
-code --install-extension ms-azuretools.vscode-azureresourcegroups
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-dotnettools.csdevkit
-code --install-extension ms-dotnettools.csharp
-code --install-extension ms-dotnettools.vscode-dotnet-runtime
-code --install-extension ms-dotnettools.vscodeintellicode-csharp
-code --install-extension ms-edgedevtools.vscode-edge-devtools
-code --install-extension ms-mssql.data-workspace-vscode
-code --install-extension ms-python.isort
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
-code --install-extension ms-toolsai.jupyter-keymap
-code --install-extension ms-toolsai.jupyter-renderers
-code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-code --install-extension ms-toolsai.vscode-jupyter-slideshow
-code --install-extension ms-vscode-remote.remote-containers
-code --install-extension ms-vscode-remote.remote-ssh
-code --install-extension ms-vscode-remote.remote-ssh-edit
-code --install-extension ms-vscode-remote.remote-wsl
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-code --install-extension ms-vscode.azure-account
-code --install-extension ms-vscode.azure-repos
-code --install-extension ms-vscode.cmake-tools
-code --install-extension ms-vscode.cpptools
-code --install-extension ms-vscode.cpptools-extension-pack
-code --install-extension ms-vscode.cpptools-themes
-code --install-extension ms-vscode.hexeditor
-code --install-extension ms-vscode.js-debug-nightly
-code --install-extension ms-vscode.live-server
-code --install-extension ms-vscode.makefile-tools
-code --install-extension ms-vscode.notepadplusplus-keybindings
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.remote-explorer
-code --install-extension ms-vscode.remote-repositories
-code --install-extension ms-vscode.remote-server
-code --install-extension ms-vscode.test-adapter-converter
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension msjsdiag.vscode-react-native
-code --install-extension mtxr.sqltools
-code --install-extension naumovs.color-highlight
-code --install-extension njpwerner.autodocstring
-code --install-extension npclaudiu.vscode-gn
-code --install-extension octref.vetur
-code --install-extension oderwat.indent-rainbow
-code --install-extension pflannery.vscode-versionlens
-code --install-extension pranaygp.vscode-css-peek
-code --install-extension redhat.java
-code --install-extension redhat.vscode-commons
-code --install-extension redhat.vscode-xml
-code --install-extension redhat.vscode-yaml
-code --install-extension ritwickdey.LiveServer
-code --install-extension rodrigovallades.es7-react-js-snippets
-code --install-extension rust-lang.rust-analyzer
-code --install-extension rvest.vs-code-prettier-eslint
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension Shopify.ruby-lsp
-code --install-extension SonarSource.sonarlint-vscode
-code --install-extension steoates.autoimport
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension syler.sass-indented
-code --install-extension TabNine.tabnine-vscode
-code --install-extension tal7aouy.icons
-code --install-extension techer.open-in-browser
-code --install-extension thekalinga.bootstrap4-vscode
-code --install-extension tomoki1207.pdf
-code --install-extension twxs.cmake
-code --install-extension usernamehw.errorlens
-code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension vscjava.vscode-java-debug
-code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-maven
-code --install-extension Vue.volar
-code --install-extension waderyan.gitblame
-code --install-extension wholroyd.jinja
-code --install-extension wix.vscode-import-cost
-code --install-extension xabikos.JavaScriptSnippets
-code --install-extension xdebug.php-debug
-code --install-extension xdebug.php-pack
-code --install-extension yzane.markdown-pdf
-code --install-extension yzhang.markdown-all-in-one
-code --install-extension ZainChen.json
-code --install-extension zhang-renyang.vscode-react
-code --install-extension Zignd.html-css-class-completion
-code --install-extension zobo.php-intellisense
+code --install-extension aaron-bond.better-comments --force
+code --install-extension alefragnani.Bookmarks --force
+code --install-extension alefragnani.project-manager --force
+code --install-extension alexcvzz.vscode-sqlite --force
+code --install-extension alexdima.copy-relative-path --force
+code --install-extension amazonwebservices.aws-toolkit-vscode --force
+code --install-extension Angular.ng-template --force
+code --install-extension anseki.vscode-color --force
+code --install-extension antoniormrzz.electron-snippets --force
+code --install-extension batisteo.vscode-django --force
+code --install-extension bierner.markdown-preview-github-styles --force
+code --install-extension bradlc.vscode-tailwindcss --force
+code --install-extension brapifra.phpserver --force
+code --install-extension burkeholland.simple-react-snippets --force
+code --install-extension christian-kohler.npm-intellisense --force
+code --install-extension christian-kohler.path-intellisense --force
+code --install-extension cschlosser.doxdocgen --force
+code --install-extension danielpinto8zz6.c-cpp-compile-run --force
+code --install-extension Dart-Code.dart-code --force
+code --install-extension Dart-Code.flutter --force
+code --install-extension DavidAnson.vscode-markdownlint --force
+code --install-extension dbaeumer.vscode-eslint --force
+code --install-extension DEVSENSE.composer-php-vscode --force
+code --install-extension DEVSENSE.intelli-php-vscode --force
+code --install-extension DEVSENSE.phptools-vscode --force
+code --install-extension DEVSENSE.profiler-php-vscode --force
+code --install-extension donjayamanne.githistory --force
+code --install-extension donjayamanne.jquerysnippets --force
+code --install-extension donjayamanne.python-environment-manager --force
+code --install-extension donjayamanne.python-extension-pack --force
+code --install-extension DotJoshJohnson.xml --force
+code --install-extension dracula-theme.theme-dracula --force
+code --install-extension dsanders11.vscode-electron-build-tools --force
+code --install-extension dsznajder.es7-react-js-snippets --force
+code --install-extension eamodio.gitlens --force
+code --install-extension ecmel.vscode-html-css --force
+code --install-extension EditorConfig.EditorConfig --force
+code --install-extension esbenp.prettier-vscode --force
+code --install-extension felipecaputo.git-project-manager --force
+code --install-extension firefox-devtools.vscode-firefox-debug --force
+code --install-extension formulahendry.auto-close-tag --force
+code --install-extension formulahendry.auto-complete-tag --force
+code --install-extension formulahendry.auto-rename-tag --force
+code --install-extension formulahendry.code-runner --force
+code --install-extension GitHub.copilot --force
+code --install-extension GitHub.copilot-chat --force
+code --install-extension GitHub.github-vscode-theme --force
+code --install-extension GitHub.remotehub --force
+code --install-extension github.vscode-github-actions --force
+code --install-extension GitHub.vscode-pull-request-github --force
+code --install-extension golang.go --force
+code --install-extension GrapeCity.gc-excelviewer --force
+code --install-extension GraphQL.vscode-graphql --force
+code --install-extension GraphQL.vscode-graphql-syntax --force
+code --install-extension Gruntfuggly.todo-tree --force
+code --install-extension hbenl.vscode-test-explorer --force
+code --install-extension idleberg.electron-builder --force
+code --install-extension inferrinizzard.prettier-sql-vscode --force
+code --install-extension IronGeek.vscode-env --force
+code --install-extension jeff-hykin.better-cpp-syntax --force
+code --install-extension johnpapa.Angular2 --force
+code --install-extension johnpapa.vscode-peacock --force
+code --install-extension jorgeserrano.vscode-csharp-snippets --force
+code --install-extension k--kato.intellij-idea-keybindings --force
+code --install-extension KevinRose.vsc-python-indent --force
+code --install-extension leizongmin.node-module-intellisense --force
+code --install-extension mechatroner.rainbow-csv --force
+code --install-extension Meezilla.json --force
+code --install-extension mgmcdermott.vscode-language-babel --force
+code --install-extension mhutchie.git-graph --force
+code --install-extension mikestead.dotenv --force
+code --install-extension mrmlnc.vscode-scss --force
+code --install-extension ms-azuretools.vscode-azureresourcegroups --force
+code --install-extension ms-azuretools.vscode-docker --force
+code --install-extension ms-dotnettools.csdevkit --force
+code --install-extension ms-dotnettools.csharp --force
+code --install-extension ms-dotnettools.vscode-dotnet-runtime --force
+code --install-extension ms-dotnettools.vscodeintellicode-csharp --force
+code --install-extension ms-edgedevtools.vscode-edge-devtools --force
+code --install-extension ms-mssql.data-workspace-vscode --force
+code --install-extension ms-python.isort --force
+code --install-extension ms-python.python --force
+code --install-extension ms-python.vscode-pylance --force
+code --install-extension ms-toolsai.jupyter --force
+code --install-extension ms-toolsai.jupyter-keymap --force
+code --install-extension ms-toolsai.jupyter-renderers --force
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags --force
+code --install-extension ms-toolsai.vscode-jupyter-slideshow --force
+code --install-extension ms-vscode-remote.remote-containers --force
+code --install-extension ms-vscode-remote.remote-ssh --force
+code --install-extension ms-vscode-remote.remote-ssh-edit --force
+code --install-extension ms-vscode-remote.remote-wsl --force
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack --force
+code --install-extension ms-vscode.azure-account --force
+code --install-extension ms-vscode.azure-repos --force
+code --install-extension ms-vscode.cmake-tools --force
+code --install-extension ms-vscode.cpptools --force
+code --install-extension ms-vscode.cpptools-extension-pack --force
+code --install-extension ms-vscode.cpptools-themes --force
+code --install-extension ms-vscode.hexeditor --force
+code --install-extension ms-vscode.js-debug-nightly --force
+code --install-extension ms-vscode.live-server --force
+code --install-extension ms-vscode.makefile-tools --force
+code --install-extension ms-vscode.notepadplusplus-keybindings --force
+code --install-extension ms-vscode.powershell --force
+code --install-extension ms-vscode.remote-explorer --force
+code --install-extension ms-vscode.remote-repositories --force
+code --install-extension ms-vscode.remote-server --force
+code --install-extension ms-vscode.test-adapter-converter --force
+code --install-extension ms-vsliveshare.vsliveshare --force
+code --install-extension msjsdiag.vscode-react-native --force
+code --install-extension mtxr.sqltools --force
+code --install-extension naumovs.color-highlight --force
+code --install-extension njpwerner.autodocstring --force
+code --install-extension npclaudiu.vscode-gn --force
+code --install-extension octref.vetur --force
+code --install-extension oderwat.indent-rainbow --force
+code --install-extension pflannery.vscode-versionlens --force
+code --install-extension pranaygp.vscode-css-peek --force
+code --install-extension redhat.java --force
+code --install-extension redhat.vscode-commons --force
+code --install-extension redhat.vscode-xml --force
+code --install-extension redhat.vscode-yaml --force
+code --install-extension ritwickdey.LiveServer --force
+code --install-extension rodrigovallades.es7-react-js-snippets --force
+code --install-extension rust-lang.rust-analyzer --force
+code --install-extension rvest.vs-code-prettier-eslint --force
+code --install-extension shd101wyy.markdown-preview-enhanced --force
+code --install-extension Shopify.ruby-lsp --force
+code --install-extension SonarSource.sonarlint-vscode --force
+code --install-extension steoates.autoimport --force
+code --install-extension streetsidesoftware.code-spell-checker --force
+code --install-extension syler.sass-indented --force
+code --install-extension TabNine.tabnine-vscode --force
+code --install-extension tal7aouy.icons --force
+code --install-extension techer.open-in-browser --force
+code --install-extension thekalinga.bootstrap4-vscode --force
+code --install-extension tomoki1207.pdf --force
+code --install-extension twxs.cmake --force
+code --install-extension usernamehw.errorlens --force
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples --force
+code --install-extension VisualStudioExptTeam.vscodeintellicode --force
+code --install-extension vscjava.vscode-java-debug --force
+code --install-extension vscjava.vscode-java-dependency --force
+code --install-extension vscjava.vscode-java-pack --force
+code --install-extension vscjava.vscode-java-test --force
+code --install-extension vscjava.vscode-maven --force
+code --install-extension Vue.volar --force
+code --install-extension waderyan.gitblame --force
+code --install-extension wholroyd.jinja --force
+code --install-extension wix.vscode-import-cost --force
+code --install-extension xabikos.JavaScriptSnippets --force
+code --install-extension xdebug.php-debug --force
+code --install-extension xdebug.php-pack --force
+code --install-extension yzane.markdown-pdf --force
+code --install-extension yzhang.markdown-all-in-one --force
+code --install-extension ZainChen.json --force
+code --install-extension zhang-renyang.vscode-react --force
+code --install-extension Zignd.html-css-class-completion --force
+code --install-extension zobo.php-intellisense --force
