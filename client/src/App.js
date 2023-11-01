@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Home, About, Generators, ThirdParty } from "./lib/pages";
+import { Home, About, Generators, ThirdParty, Converters } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
   CSSFlex,
@@ -12,6 +12,7 @@ import {
   Word,
   Image,
 } from "./lib/pages/generators/sub";
+import BinaryText from "./lib/pages/converters/sub/BinaryText";
 
 import "./lib/styles/scss/global/global.scss";
 
@@ -33,6 +34,10 @@ function App() {
             <Route path="color-palette" element={<ColorPalette />} />
             <Route path="word" element={<Word />} />
             <Route path="image" element={<Image />} />
+          </Route>
+          <Route path="converters" element={<SubpageLayout />}>
+            <Route index element={<Converters />} />
+            <Route path="binary-text" element={<BinaryText />} />
           </Route>
         </Route>
       </Routes>
