@@ -13,7 +13,6 @@ code --install-extension anseki.vscode-color
 code --install-extension antoniormrzz.electron-snippets
 code --install-extension batisteo.vscode-django
 code --install-extension bierner.markdown-preview-github-styles
-code --install-extension Blackboxapp.blackbox
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension brapifra.phpserver
 code --install-extension burkeholland.simple-react-snippets
