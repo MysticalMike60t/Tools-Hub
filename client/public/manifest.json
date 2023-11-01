@@ -1,10 +1,11 @@
 {
   "short_name": "Tools Hub",
   "name": "Tools Hub App",
+  "description": "Tools Hub, your one stop shop for all tools for PC",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
@@ -21,5 +22,7 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#74b1be",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "form_factor": "wide",
+  "orientation": "landscape"
 }
