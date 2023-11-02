@@ -39,6 +39,7 @@ Cacher.cacher-vscode
 carbonid1.emmet-jss
 Cardinal90.multi-cursor-case-preserve
 Catppuccin.catppuccin-vsc
+chrisdias.vscode-opennewinstance
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 codezombiech.gitignore
@@ -121,6 +122,7 @@ infinity1207.angular2-switcher
 ing-bank.vscode-psl
 IronGeek.vscode-env
 Janne252.fontawesome-autocomplete
+jasonnutter.search-node-modules
 jeff-hykin.better-cpp-syntax
 jeremyrajan.webpack
 john-crowson.angular-file-changer
@@ -129,6 +131,7 @@ johnpapa.Angular2
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
 jorgeserrano.vscode-csharp-snippets
+josee9988.minifyall
 josetr.cmake-language-support-vscode
 k--kato.intellij-idea-keybindings
 karunamurti.haml
@@ -151,10 +154,12 @@ mechatroner.rainbow-csv
 Meezilla.json
 mgmcdermott.vscode-language-babel
 mhutchie.git-graph
+michelemelluso.gitignore
 miguelsolorio.min-theme
 mikestead.dotenv
 mitaki28.vscode-clang
 mohd-akram.vscode-html-format
+moshfeu.compare-folders
 mrmlnc.vscode-attrs-sorter
 mrmlnc.vscode-pugbeautify
 mrmlnc.vscode-scss
@@ -225,6 +230,7 @@ plibither8.remove-comments
 Postman.postman-for-vscode
 pranaygp.vscode-css-peek
 pucelle.vscode-css-navigation
+quentinguidee.gitignore-ultimate
 quicktype.quicktype
 rapidapi.vscode-services
 rbbit.typescript-hero
@@ -293,6 +299,7 @@ vscode-icons-team.vscode-icons
 Vue.volar
 waderyan.gitblame
 WallabyJs.console-ninja
+warren-buckley.iis-express
 wayou.vscode-todo-highlight
 wholroyd.jinja
 wix.glean
@@ -302,6 +309,7 @@ xabikos.JavaScriptSnippets
 xaver.clang-format
 xdebug.php-debug
 xdebug.php-pack
+yamajyn.commandlist
 Yseop.vscode-yseopml
 yzane.markdown-pdf
 yzhang.markdown-all-in-one
