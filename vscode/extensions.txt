@@ -19,6 +19,7 @@ antfu.vite
 antoniormrzz.electron-snippets
 arturock.gitstash
 AykutSarac.jsoncrack-vscode
+bat-snippets.bat-snippets
 batisteo.vscode-django
 bierner.emojisense
 bierner.github-markdown-preview
@@ -34,6 +35,7 @@ bmewburn.vscode-intelephense-client
 bradlc.vscode-tailwindcss
 brapifra.phpserver
 burkeholland.simple-react-snippets
+Cacher.cacher-vscode
 carbonid1.emmet-jss
 Cardinal90.multi-cursor-case-preserve
 Catppuccin.catppuccin-vsc
@@ -98,6 +100,7 @@ GraphQL.vscode-graphql
 GraphQL.vscode-graphql-execution
 GraphQL.vscode-graphql-syntax
 Gruntfuggly.todo-tree
+haampie.spack
 hashicorp.hcl
 hbenl.vscode-test-explorer
 HTMLHint.vscode-htmlhint
@@ -115,6 +118,7 @@ idleberg.electron-builder
 igordvlpr.open-in-browser
 inferrinizzard.prettier-sql-vscode
 infinity1207.angular2-switcher
+ing-bank.vscode-psl
 IronGeek.vscode-env
 Janne252.fontawesome-autocomplete
 jeff-hykin.better-cpp-syntax
@@ -125,6 +129,7 @@ johnpapa.Angular2
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
 jorgeserrano.vscode-csharp-snippets
+josetr.cmake-language-support-vscode
 k--kato.intellij-idea-keybindings
 karunamurti.haml
 KevinRose.vsc-python-indent
@@ -135,10 +140,12 @@ leizongmin.node-module-intellisense
 LeoJhonSong.ccpp-extension-pack
 llvm-vs-code-extensions.vscode-clangd
 lmcarreiro.vscode-smart-column-indenter
+logerfo.sln-support
 loiane.angular-extension-pack
 loiane.ts-extension-pack
 magicstack.MagicPython
 MariusAlchimavicius.json-to-ts
+MateusHenriqueNascimentoSoares.mit-license-generator
 McCarter.start-git-bash
 mechatroner.rainbow-csv
 Meezilla.json
@@ -265,6 +272,7 @@ thekalinga.bootstrap4-vscode
 tintinweb.vscode-decompiler
 toba.vsfire
 tomoki1207.pdf
+toramameseven.bat-tools
 twxs.cmake
 unifiedjs.vscode-mdx
 unthrottled.doki-theme
@@ -299,7 +307,9 @@ Yseop.vscode-yseopml
 yzane.markdown-pdf
 yzhang.markdown-all-in-one
 ZainChen.json
+zchrissirhcz.cmake-highlight
 zhang-renyang.vscode-react
+zhaofinger.batch-format
 Zignd.html-css-class-completion
 ziyasal.vscode-open-in-github
 znck.grammarly
