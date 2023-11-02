@@ -3,5 +3,6 @@ import About from "./About/About";
 import Generators from "./generators/Generators";
 import ThirdParty from "./3rd-party/ThirdParty";
 import Converters from "./converters/Converters";
+import Tools from "./tools/Tools";
 
-export { Home, About, Generators, ThirdParty, Converters };
+export { Home, About, Generators, ThirdParty, Converters, Tools };

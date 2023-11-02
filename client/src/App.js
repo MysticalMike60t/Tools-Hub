@@ -1,7 +1,14 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Home, About, Generators, ThirdParty, Converters } from "./lib/pages";
+import {
+  Home,
+  About,
+  Generators,
+  ThirdParty,
+  Converters,
+  Tools,
+} from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
   CSSFlex,
@@ -15,6 +22,8 @@ import {
 import BinaryText from "./lib/pages/converters/sub/BinaryText";
 
 import "./lib/styles/scss/global/global.scss";
+import Editors from "./lib/pages/tools/editors/Editors";
+import { HTML } from "./lib/pages/tools/editors";
 
 function App() {
   return (
@@ -38,6 +47,13 @@ function App() {
           <Route path="converters" element={<SubpageLayout />}>
             <Route index element={<Converters />} />
             <Route path="binary-text" element={<BinaryText />} />
+          </Route>
+          <Route path="tools" element={<SubpageLayout />}>
+            <Route index element={<Tools />} />
+            <Route path="editors">
+              <Route index element={<Editors />} />
+              <Route path="html" element={<HTML />} />
+            </Route>
           </Route>
         </Route>
       </Routes>
