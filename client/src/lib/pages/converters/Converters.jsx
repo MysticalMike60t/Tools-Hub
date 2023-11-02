@@ -8,6 +8,9 @@ const Converters = () => {
       <Link className="nav-link" to="/converters/binary-text">
         Binary to Text
       </Link>
+      <Link className="nav-link" to="/converters/sass-css">
+        SASS to CSS
+      </Link>
     </div>
   );
 };

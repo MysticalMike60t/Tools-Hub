@@ -8,6 +8,7 @@ import {
   ThirdParty,
   Converters,
   Tools,
+  Documentation,
 } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
@@ -24,6 +25,7 @@ import BinaryText from "./lib/pages/converters/sub/BinaryText";
 import "./lib/styles/scss/global/global.scss";
 import Editors from "./lib/pages/tools/editors/Editors";
 import { HTML } from "./lib/pages/tools/editors";
+import SCSSCSS from "./lib/pages/converters/sub/SCSSCSS";
 
 function App() {
   return (
@@ -47,6 +49,7 @@ function App() {
           <Route path="converters" element={<SubpageLayout />}>
             <Route index element={<Converters />} />
             <Route path="binary-text" element={<BinaryText />} />
+            <Route path="sass-css" element={<SCSSCSS />} />
           </Route>
           <Route path="tools" element={<SubpageLayout />}>
             <Route index element={<Tools />} />
@@ -54,6 +57,9 @@ function App() {
               <Route index element={<Editors />} />
               <Route path="html" element={<HTML />} />
             </Route>
+          </Route>
+          <Route path="documentation" element={<SubpageLayout />}>
+            <Route index element={<Documentation />} />
           </Route>
         </Route>
       </Routes>
