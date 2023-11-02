@@ -8,6 +8,7 @@ import {
   ThirdParty,
   Converters,
   Tools,
+  Documentation,
 } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
@@ -56,6 +57,9 @@ function App() {
               <Route index element={<Editors />} />
               <Route path="html" element={<HTML />} />
             </Route>
+          </Route>
+          <Route path="documentation" element={<SubpageLayout />}>
+            <Route index element={<Documentation />} />
           </Route>
         </Route>
       </Routes>

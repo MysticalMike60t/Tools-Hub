@@ -25,6 +25,9 @@ function Home() {
           <li>
             <Link to="/tools">Tools</Link>
           </li>
+          <li>
+            <Link to="/documentation">Documentation</Link>
+          </li>
         </ul>
       </div>
       <div className="extra">

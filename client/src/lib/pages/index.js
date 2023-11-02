@@ -4,5 +4,14 @@ import Generators from "./generators/Generators";
 import ThirdParty from "./3rd-party/ThirdParty";
 import Converters from "./converters/Converters";
 import Tools from "./tools/Tools";
+import Documentation from "./documentation/Documentation";
 
-export { Home, About, Generators, ThirdParty, Converters, Tools };
+export {
+  Home,
+  About,
+  Generators,
+  ThirdParty,
+  Converters,
+  Tools,
+  Documentation,
+};
