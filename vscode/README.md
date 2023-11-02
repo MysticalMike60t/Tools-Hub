@@ -1,5 +1,5 @@
 # Extentions for vscode
 
-```dotnetcli
+```powershell
 Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }
 ```
