@@ -302,7 +302,6 @@ xabikos.JavaScriptSnippets
 xaver.clang-format
 xdebug.php-debug
 xdebug.php-pack
-xucongli1989.highlight-icemode-select
 Yseop.vscode-yseopml
 yzane.markdown-pdf
 yzhang.markdown-all-in-one
