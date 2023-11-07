@@ -64,6 +64,19 @@ const thirdPartyTools = [
         ],
       },
       {
+        sectionName: "File Explorers",
+        tools: [
+          {
+            name: "WinRAR",
+            link: "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624.exe",
+          },
+          {
+            name: "7-Zip",
+            link: "https://www.7-zip.org/download.html",
+          },
+        ],
+      },
+      {
         sectionName: "Miscellaneous",
         tools: [
           {

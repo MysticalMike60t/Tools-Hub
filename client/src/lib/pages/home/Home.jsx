@@ -29,6 +29,9 @@ function Home() {
           <li>
             <Link to="/documentation">Documentation</Link>
           </li>
+          <li>
+            <Link to="/files">Files</Link>
+          </li>
         </ul>
       </div>
       <div className="extra">
