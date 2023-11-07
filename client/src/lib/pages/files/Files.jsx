@@ -10,6 +10,9 @@ const Files = () => {
         <Link className="nav-link" to="/files/winrar">
           WinRAR
         </Link>
+        <Link className="nav-link" to="/files/icons">
+          Icons
+        </Link>
       </div>
     </div>
   );
