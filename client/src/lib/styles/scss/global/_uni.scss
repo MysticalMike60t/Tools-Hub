@@ -95,3 +95,13 @@
     }
   }
 }
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background: $background-light;
+  padding: 10px 20px;
+  border-radius: 5px;
+  &:hover {
+    filter: brightness(110%);
+  }
+}
