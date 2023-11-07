@@ -2,6 +2,7 @@ import React from "react";
 import { defaultPageClassName } from "../../../../global/config/index.config";
 import { Section } from "./modules";
 import Tags from "./html/Tags";
+import { A } from "../../../../global/modules";
 
 const HTML = () => {
   return (
@@ -16,9 +17,7 @@ const HTML = () => {
           </Section>
         </div>
         <div className="third-party">
-          <a className="nav-link" href="https://www.w3schools.com/html/">
-            W3 HTML
-          </a>
+          <A href="https://www.w3schools.com/html/">W3 HTML</A>
         </div>
       </div>
     </div>
