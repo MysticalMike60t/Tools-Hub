@@ -20,7 +20,7 @@ const Languages = () => {
           img={htmlIcon}
           text="HTML"
         />
-        <LangLink
+        {/* <LangLink
           link="/documentation/languages/css"
           img={cssIcon}
           text="CSS"
@@ -40,7 +40,7 @@ const Languages = () => {
           link="/documentation/languages/react"
           img={reactIcon}
           text="React"
-        />
+        /> */}
       </div>
     </div>
   );
