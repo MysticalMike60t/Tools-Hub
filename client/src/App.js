@@ -38,6 +38,8 @@ import Editors from "./lib/pages/tools/editors/Editors";
 import { HTMLEditor } from "./lib/pages/tools/editors";
 import SCSSCSS from "./lib/pages/converters/sub/SCSSCSS";
 import Winrar from "./lib/pages/files/sub/Winrar";
+import Icons from "./lib/pages/files/sub/Icons";
+import Svg from "./lib/pages/files/sub/icons/Svg";
 
 function App() {
   return (
@@ -100,6 +102,10 @@ function App() {
           <Route path="files" element={<SubpageLayout />}>
             <Route index element={<Files />} />
             <Route path="winrar" element={<Winrar />} />
+            <Route path="icons">
+              <Route index element={<Icons />} />
+              <Route path="svg" element={<Svg />} />
+            </Route>
           </Route>
         </Route>
       </Routes>
