@@ -3,6 +3,20 @@
   "version": "1.0.14",
   "private": false,
   "homepage": "./",
+  "author": "Caden Finkelstein",
+  "description": "Tools Hub, your one stop shop for all tools for PC",
+  "keywords": [
+    "tools",
+    "windows 10",
+    "windows 11",
+    "apps",
+    "applications",
+    "windows",
+    "utilities",
+    "software",
+    "hub",
+    "management"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

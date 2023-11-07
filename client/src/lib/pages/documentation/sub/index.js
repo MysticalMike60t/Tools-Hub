@@ -1,3 +1,3 @@
 import Languages from "./Languages";
 
-export { Languages }
+export { Languages };
