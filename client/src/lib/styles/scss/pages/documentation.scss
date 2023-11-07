@@ -1,6 +1,5 @@
 .page.documentation {
   width: 90%;
-  background: red;
   .wrapper {
     display: flex;
     align-items: flex-start;
@@ -10,7 +9,6 @@
     gap: 10px;
     width: 100%;
     padding: 10px;
-    background: green;
     .nav-link {
       display: flex;
       align-items: center;
@@ -18,6 +16,50 @@
       gap: 10px;
       img {
         width: 20px;
+      }
+    }
+  }
+  &.languages.language {
+    .wrapper.content {
+      width: 100%;
+      .doc {
+        .section {
+          h1 {
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .body {
+            table {
+              text-align: left;
+              tbody {
+                tr {
+                  outline: 1px solid rgba(255, 255, 255, 0.1);
+                  th {
+                    text-align: center;
+                    background: $background-transparent;
+                    padding: 10px 20px;
+                  }
+                  td {
+                    padding: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .third-party {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        border-top: 2px solid $primary;
+        background: rgba(0, 0, 0, 0.1);
       }
     }
   }
