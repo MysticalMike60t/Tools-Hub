@@ -9,6 +9,7 @@ import {
   Converters,
   Tools,
   Documentation,
+  Files,
 } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
@@ -36,6 +37,7 @@ import "./lib/styles/scss/global/global.scss";
 import Editors from "./lib/pages/tools/editors/Editors";
 import { HTMLEditor } from "./lib/pages/tools/editors";
 import SCSSCSS from "./lib/pages/converters/sub/SCSSCSS";
+import Winrar from "./lib/pages/files/sub/Winrar";
 
 function App() {
   return (
@@ -94,6 +96,10 @@ function App() {
                 <Route index element={<REACT />} />
               </Route>
             </Route>
+          </Route>
+          <Route path="files" element={<SubpageLayout />}>
+            <Route index element={<Files />} />
+            <Route path="winrar" element={<Winrar />} />
           </Route>
         </Route>
       </Routes>
