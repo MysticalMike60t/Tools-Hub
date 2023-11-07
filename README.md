@@ -41,12 +41,6 @@ The Windows Tools Hub is a collection of essential utilities and tools designed 
 - **Feature 1:** Tools made by me, Caden Finkelstein.
 - **Feature 2:** A Third-Party tools collected by me, and placed here to make your life easier!
 
-## Screenshots
-
-<img src="lib/images/screenshots/screenshot1.png" width=300/>
-<img src="lib/images/screenshots/screenshot2.png" width=300/>
-<img src="lib/images/screenshots/screenshot3.png" width=300/>
-
 ## Installation
 
 To use the Windows Tools Hub, follow these steps:
@@ -138,3 +132,9 @@ Thank you for using the Windows 10 Tools App! We hope it simplifies your Windows
 ![FreeCodeCamp](https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green)
 ![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-258ffa?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&logo=obsidian&logoColor=white)
+
+## Screenshots
+
+<img src="lib/images/screenshots/screenshot1.png" width=300/>
+<img src="lib/images/screenshots/screenshot2.png" width=300/>
+<img src="lib/images/screenshots/screenshot3.png" width=300/>
