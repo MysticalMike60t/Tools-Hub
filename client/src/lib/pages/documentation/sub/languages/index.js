@@ -6,4 +6,4 @@ import CPP from "./CPP";
 import REACT from "./REACT";
 import SCSS from "../../../converters/sub/SCSSCSS";
 
-export { HTML, CSS, JS, CS, CPP, REACT, SCSS }
+export { HTML, CSS, JS, CS, CPP, REACT, SCSS };
