@@ -20,11 +20,21 @@ import {
   Word,
   Image,
 } from "./lib/pages/generators/sub";
+import { Languages } from "./lib/pages/documentation/sub";
+import {
+  CPP,
+  CS,
+  CSS,
+  HTML,
+  JS,
+  REACT,
+  SCSS,
+} from "./lib/pages/documentation/sub/languages/";
 import BinaryText from "./lib/pages/converters/sub/BinaryText";
 
 import "./lib/styles/scss/global/global.scss";
 import Editors from "./lib/pages/tools/editors/Editors";
-import { HTML } from "./lib/pages/tools/editors";
+import { HTMLEditor } from "./lib/pages/tools/editors";
 import SCSSCSS from "./lib/pages/converters/sub/SCSSCSS";
 
 function App() {
@@ -55,11 +65,35 @@ function App() {
             <Route index element={<Tools />} />
             <Route path="editors">
               <Route index element={<Editors />} />
-              <Route path="html" element={<HTML />} />
+              <Route path="html" element={<HTMLEditor />} />
             </Route>
           </Route>
           <Route path="documentation" element={<SubpageLayout />}>
             <Route index element={<Documentation />} />
+            <Route path="languages">
+              <Route index element={<Languages />} />
+              <Route path="html">
+                <Route index element={<HTML />} />
+              </Route>
+              <Route path="css">
+                <Route index element={<CSS />} />
+              </Route>
+              <Route path="js">
+                <Route index element={<JS />} />
+              </Route>
+              <Route path="cs">
+                <Route index element={<CS />} />
+              </Route>
+              <Route path="cpp">
+                <Route index element={<CPP />} />
+              </Route>
+              <Route path="scss">
+                <Route index element={<SCSS />} />
+              </Route>
+              <Route path="react">
+                <Route index element={<REACT />} />
+              </Route>
+            </Route>
           </Route>
         </Route>
       </Routes>

@@ -1,3 +1,3 @@
-import HTML from "./html/HTML";
+import HTMLEditor from "./html/HTML";
 
-export { HTML }
+export { HTMLEditor }
