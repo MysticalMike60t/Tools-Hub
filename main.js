@@ -1,5 +1,5 @@
 const { BrowserWindow } = require("electron-acrylic-window");
-const { app, dialog } = require("electron");
+const { app, dialog, shell } = require("electron");
 const { autoUpdater } = require("electron-updater");
 const path = require("path");
 
@@ -66,6 +66,11 @@ function createWindow() {
   );
 
   mainWindow.loadFile(indexHTMLPath);
+
+  mainWindow.webContents.setWindowOpenHandler((edata) => {
+    shell.openExternal(edata.url);
+    return { action: "deny" };
+  });
 }
 
 function checkForUpdates() {
@@ -146,7 +151,7 @@ function compareVersions(a, b) {
 
 app.on("ready", () => {
   // Redirect the console output to the Windows console
-  console.log = function(message) {
+  console.log = function (message) {
     const cp = require("child_process");
     cp.exec(`echo ${message}`);
   };
