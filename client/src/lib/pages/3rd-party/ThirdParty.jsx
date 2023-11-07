@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { thirdPartyTools } from "../../data";
+import { A } from "../../global/modules";
 
 const ThirdParty = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -41,14 +42,12 @@ const ThirdParty = () => {
                       {/* <a key={toolIndex} href={tool.link} download={tool.name}>
                         {tool.name}
                       </a> */}
-                      <a
+                      <A
                         key={toolIndex}
                         href={tool.link}
-                        target="_blank"
-                        rel="noreferrer"
                       >
                         {tool.name}
-                      </a>
+                      </A>
                     </>
                   ))}
                 </div>

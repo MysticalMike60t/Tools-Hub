@@ -6,6 +6,7 @@ import {
   homeTitle,
   newestReleaseLink,
 } from "../../global/config/index.config";
+import { A_DEFAULT } from "../../global/modules";
 
 function Home() {
   return (
@@ -31,9 +32,9 @@ function Home() {
         </ul>
       </div>
       <div className="extra">
-        <a href={newestReleaseLink} target="_blank" rel="noreferrer">
+        <A_DEFAULT href={newestReleaseLink} target="_blank" rel="noreferrer">
           Newest Release
-        </a>
+        </A_DEFAULT>
       </div>
     </div>
   );
