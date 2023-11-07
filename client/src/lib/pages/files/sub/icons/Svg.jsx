@@ -1,6 +1,5 @@
 import React from "react";
 import { defaultPageClassName } from "../../../../global/config/index.config";
-import { Link } from "react-router-dom";
 
 const Svg = () => {
   return (
