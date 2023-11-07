@@ -71,10 +71,6 @@ const thirdPartyTools = [
             link: "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624.exe",
           },
           {
-            name: "WinRAR Membership bypass",
-            link: "#/files/winrar",
-          },
-          {
             name: "7-Zip",
             link: "https://www.7-zip.org/download.html",
           },
