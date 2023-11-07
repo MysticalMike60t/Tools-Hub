@@ -30,6 +30,26 @@
               color: white;
             }
           }
+          .input {
+            input {
+              color: white;
+              text-decoration: none;
+              background: $background-light;
+              padding: 10px 20px;
+              border-radius: 5px;
+              border: none;
+              outline: none;
+              margin-bottom: 20px;
+              &:focus,
+              &:target,
+              &:checked {
+                outline: 1px solid #ccc;
+              }
+              &::placeholder {
+                color: white;
+              }
+            }
+          }
           .body {
             table {
               text-align: left;

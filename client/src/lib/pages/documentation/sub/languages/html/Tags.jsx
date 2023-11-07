@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Tags = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchChange = (e) => {
+    const query = e.target.value.toLowerCase();
+    setSearchQuery(query);
+
+    // Select all <tr> elements inside the table
+    const tableRows = document.querySelectorAll("table tbody tr");
+
+    tableRows.forEach((row) => {
+      // Select the <td> containing the tag name
+      const tagCell = row.querySelector("td:first-child");
+      if (tagCell) {
+        const tagName = tagCell.textContent.toLowerCase();
+
+        // Check if the tag name includes the search query
+        if (tagName.includes(query)) {
+          // Show the row if the query matches
+          row.style.display = "table-row";
+        } else {
+          // Hide the row if the query doesn't match
+          row.style.display = "none";
+        }
+      }
+    });
+  };
   return (
     <>
       <h1>
         <Link to="/documentation/languages/html#tags">Tags</Link>
       </h1>
+      <div className="input">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+      </div>
       <p className="body">
         <table>
           <tbody>
