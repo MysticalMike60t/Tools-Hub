@@ -32,6 +32,9 @@ function Home() {
           <li>
             <Link to="/files">Files</Link>
           </li>
+          <li>
+            <Link to="/resources">Resources</Link>
+          </li>
         </ul>
       </div>
       <div className="extra">

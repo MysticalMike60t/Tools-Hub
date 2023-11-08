@@ -10,6 +10,7 @@ import {
   Tools,
   Documentation,
   Files,
+  Resources,
 } from "./lib/pages";
 import { Layout, SubpageLayout } from "./lib/global/components";
 import {
@@ -40,6 +41,7 @@ import SCSSCSS from "./lib/pages/converters/sub/SCSSCSS";
 import Winrar from "./lib/pages/files/sub/Winrar";
 import Icons from "./lib/pages/files/sub/Icons";
 import Svg from "./lib/pages/files/sub/icons/Svg";
+import { Icons as ResourceIcons } from "./lib/pages/resources/sub";
 
 function App() {
   return (
@@ -105,6 +107,12 @@ function App() {
             <Route path="icons">
               <Route index element={<Icons />} />
               <Route path="svg" element={<Svg />} />
+            </Route>
+          </Route>
+          <Route path="resources">
+            <Route index element={<Resources />} />
+            <Route path="icons">
+              <Route index element={<ResourceIcons />} />
             </Route>
           </Route>
         </Route>
