@@ -1,0 +1,37 @@
+.resources {
+  &.sub {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .wrapper {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      .category {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .section {
+          width: 80%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .items {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
