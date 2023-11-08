@@ -9,9 +9,21 @@ const Icons = () => {
       <h1>Icons</h1>
       <div className="wrapper content">
         {resourceIcons.map((data, key) => (
-          <A href={data.link} key={key}>
-            {data.text}
-          </A>
+          <div className="category" key={key}>
+            <h2>{data.category}</h2>
+            {data.sections.map((data, key) => (
+              <div className="section" key={key}>
+                <h3>{data.sectionName}</h3>
+                <div className="items">
+                  {data.links.map((data, key) => (
+                    <A href={data.link} key={key}>
+                      {data.text}
+                    </A>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         ))}
       </div>
     </div>
