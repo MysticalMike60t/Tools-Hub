@@ -109,7 +109,7 @@ function App() {
               <Route path="svg" element={<Svg />} />
             </Route>
           </Route>
-          <Route path="resources">
+          <Route path="resources" element={<SubpageLayout />}>
             <Route index element={<Resources />} />
             <Route path="icons">
               <Route index element={<ResourceIcons />} />
