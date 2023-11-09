@@ -1,0 +1,82 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 20px;
+}
+.container > .title {
+  text-align: center;
+}
+.container > .content > .text {
+  padding: 20px;
+  text-indent: 50px;
+}
+.container > .content > #markdown-output {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.container > .content > #markdown-output > img {
+  padding: 0;
+  margin: 0;
+}
+.container > .content > .wrapper {
+  padding: 10px;
+}
+.container > .content > .wrapper.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+.container > .content > .wrapper.download > a {
+  color: #08a045;
+  text-decoration: none;
+  position: relative;
+}
+.container > .content > .wrapper.download > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  bottom: -1px;
+  transform: translateX(-50%);
+  background: #08a045;
+  position: absolute;
+}
+.container > .content > .wrapper.screenshots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.container > .content > .wrapper.screenshots > .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.container > .content > .wrapper.screenshots > .images > img {
+  min-width: 350px;
+  width: 45%;
+}
