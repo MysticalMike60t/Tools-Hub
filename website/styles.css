@@ -4,15 +4,19 @@
   margin: 0;
 }
 .container {
-  padding: 20px;
+  padding: 50px;
+  @media (max-width: 560px) {
+    padding: 20px;
+  }
 }
 .container > .title {
   text-align: center;
 }
 .container > .content > .text {
   padding: 20px;
-  text-indent: 50px;
+  margin: 0;
 }
+
 .container > .content > #markdown-output {
   display: flex;
   justify-content: flex-start;
@@ -39,6 +43,7 @@
   justify-content: center;
   flex-direction: row;
   position: relative;
+  margin-bottom: 10%;
 }
 .container > .content > .wrapper.download > a {
   color: #08a045;
@@ -55,6 +60,84 @@
   background: #08a045;
   position: absolute;
 }
+
+.container > .content > .wrapper.platforms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.container > .content > .wrapper.platforms > h2 {
+  margin-bottom: 0;
+}
+
+.container > .content > .wrapper.platforms > .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.container > .content > .wrapper.langs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.container > .content > .wrapper.langs > h2 {
+  margin-bottom: 0;
+}
+
+.container > .content > .wrapper.langs > .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.container > .content > .wrapper.libs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.container > .content > .wrapper.libs > h2 {
+  margin-bottom: 0;
+}
+
+.container > .content > .wrapper.libs > .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
 .container > .content > .wrapper.screenshots {
   display: flex;
   align-items: center;
@@ -71,7 +154,7 @@
   flex-wrap: wrap;
   gap: 20px;
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 0px;
   margin: 10px 0;
   box-sizing: border-box;
 }
