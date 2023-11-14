@@ -56,9 +56,17 @@
   height: 1px;
   left: 50%;
   bottom: -1px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
+  transition: 100ms ease all;
   background: #08a045;
   position: absolute;
+  pointer-events: none;
+  cursor: default;
+}
+
+.container > .content > .wrapper.download > a:hover::after {
+  transform: translateX(-50%) scaleX(0);
 }
 
 .container > .content > .wrapper.platforms {
@@ -80,7 +88,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px 0;
